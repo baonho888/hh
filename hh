@@ -1,6 +1,6 @@
 local player = game.Players.LocalPlayer
 
-if player.Name == "bao2008c" or player.Name == "BaoDuyCaygame3" or player.Name == "concubi99" or player.Name == "quocluiiiiiii" or player.Name == "noobpet570" then
+if player.Name == "bao2008c" or player.Name == "BaoDuyCaygame3" or player.Name == "danhrlom" or player.Name == "quocluiiiiiii" or player.Name == "noobpet570" then
     print("MUA SCRIPT ĐÊ")
 else
     player:Kick("MUA SCRIPT ĐÊ R CHO SÀI")

@@ -236,6 +236,7 @@ while wait()do
 local args = {
     [1] = 8,
     [2] = 1
+    [3] = 100
 }
 
 game:GetService("Players").LocalPlayer.PlayerGui.Goku.Skill1b.Z.TextButtonm1.Hitbox:FireServer(unpack(args))

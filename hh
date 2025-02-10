@@ -1,9 +1,9 @@
 local player = game.Players.LocalPlayer
 
-if player.Name == "bao2008c" or player.Name == "kaobhh2334" or player.Name == "danhrlom" or player.Name == "quocluiiiiiii" or player.Name == "noobpet570" then
-    print("MUA SCRIPT ĐÊ")
+if player.Name == "bao2008c" or player.Name == "kaobhh2334" or player.Name == "danhrlom" or player.Name == "q" or player.Name == "n" then
+    print("Ko cóa đâu")
 else
-    player:Kick("MUA SCRIPT ĐÊ R CHO SÀI")
+    player:Kick("Ko cóa đâu")
 end
 local DiscordLib =
     loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()

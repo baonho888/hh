@@ -1,11 +1,24 @@
+local player = game.Players.LocalPlayer
+
+if player.Name == "bao2008c" or player.Name == "kaobhh2334" or player.Name == "danhrlom" or player.Name == "quocluiiiiiii" or player.Name == "noobpet570" then
+    print("MUA SCRIPT ĐÊ")
+else
+    player:Kick("MUA SCRIPT ĐÊ R CHO SÀI")
+end
 local DiscordLib =
     loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
- 
-local win = DiscordLib:Window("VNP")
-local serv = win:Server("hack riêng VNP 2⭐", "")
-local drops = serv:Channel("All")
+
+local win = DiscordLib:Window("Khanh ngọc fake")
+
+local serv = win:Server("Preview", "")
+
+local btns = serv:Channel("click chữ c để hiện menu.")
+
+local serv = win:Server("VNP 2 premium ⭐", "")
+local drops = serv:Channel("hack free")
 local dis = nil
 local aura = false
+
 drops:Button("kill aura ", function()
 getgenv().G = true
 getgenv().Creator = 'https://discord.gg/B3HqPPzFYr - HalloweenGaster'
@@ -130,138 +143,6 @@ dis = tonumber(v)
 workspace.NPCS.Quest9.ClickPart.QuestTake.QuestTake.Accept3.RemoteEvent:FireServer()
 end)
 
-drops:Toggle("auto quest kaido", false, function(t)
-    aura = t
-dis = tonumber(v)
-end)
-drops:Toggle("auto quest paw user+bandits", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest1.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("vamper dio+boss bandits", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest1.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("thằng làm ace thành donut snow boss", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest2.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("auto quest nickbeo+sand boss", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest3.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("tengen+sky bandits", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest4.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("Garu+th ở town", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest5.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("sukuna", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest6.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("grab+minmam", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest7.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("Cid+geto", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest8.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("cid", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest8.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("pride", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest9.ClickPart.QuestTake.QuestTake.Accept3.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-drops:Toggle("special", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-workspace.NPCS.Quest10.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
-wait(0.1)
-end
-end)
-
-drops:Toggle("TP to bandit", false, function(t)
-    aura = t
-dis = tonumber(v)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(688.621216, 43.1711998, -563.640564, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-end)
-drops:Toggle("TP to snow boss", false, function(t)
-    aura = t
-dis = tonumber(v)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1119.84644, 116.619881, 369.243225, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-end)
-drops:Toggle("TP to sand boss", false, function(t)
-    aura = t
-dis = tonumber(v)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-518.427063, 47.8109169, 1624.42676, 0.074960649, 0, 0.997186482, 0, 1, 0, -0.997186482, 0, 0.074960649)
-end)
-drops:Toggle("TP to town boss", false, function(t)
-    aura = t
-dis = tonumber(v)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2242.24951, 26.3575649, 1949.05542, 0.992134154, -0, -0.125179008, 0, 1, -0, 0.125179008, 0, 0.992134154)
-end)
-drops:Toggle("minmama .nhẹ nhàn", false, function(t)
-    aura = t
-dis = tonumber(v)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2567.36182, 60.4346924, -58.110157, 0.893678546, -0, -0.448707759, 0, 1, -0, 0.448707759, 0, 0.893678546)
-end)
-drops:Toggle("dark bú quake của bố", false, function(t)
-    aura = t
-dis = tonumber(v) 
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3465.80298, 65.7531509, 3718.08057, 0.744877338, -0, -0.667201459, 0, 1, -0, 0.667201459, 0, 0.744877338)
-end)
-
 drops:Toggle("auto armor ⭐", false, function(t)
     aura = t
 dis = tonumber(v)
@@ -294,7 +175,33 @@ game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-154.796
 wait(0.1)
 end
 end)
-
+drops:Toggle("auto quest kaido dell có ", false, function(t)
+    aura = t
+dis = tonumber(v)
+end)
+drops:Toggle("paw user", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1813.8761, 87748.0078, 3276.88403, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.1)
+end
+end)
+drops:Toggle("auto quest paw", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+workspace.NPCS.Quest1.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
+wait(0.4)
+end
+end)
+drops:Toggle("nickbeo", false, function(t)
+    aura = t
+dis = tonumber(v)
+workspace.NPCS.Quest5.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
+end)
+drops:Button("coming soon", function()
+end)
     local drops = serv:Channel("auto secret ⭐")
 drops:Toggle("auto secret x5", false, function(t)
     aura = t
@@ -310,206 +217,10 @@ drops:Dropdown(
     end)
 
 local drops = serv:Channel("Teleport island")
---[[
-Name = <string> - The name of the section.
-]]
-Tab:AddButton({
-	Name = "Đảo khởi đầu",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(485.583771, 35.5632935, -511.945404)
-
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Đảo tuyết",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-915.918945, 33.7605095, 282.443604)
-
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Đảo cát",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-708.765259, 69.1108398, 1745.13916)
-
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Ä‘áº£o trá»i",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4594.52393, 4279.44092, 474.423523)
-
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "đảo end",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2223.75146, 36.3414612, 1965.90369)
-
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Đảo minh mama",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2569.90283, 51.1074524, -65.4458542)
-
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Đảo dark",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3465.68188, 66.2542191, 3718.19531)
-
-      		print("button pressed")
-  	end    
-})
-local Section = Tab:AddSection({
-	Name = "Sea 2đŸ‘‡"
-})
-
---[[
-Name = <string> - The name of the section.
-]]
-Tab:AddButton({
-	Name = "Đảo kaido",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-685, 87690, 789)
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Đảo platium",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1258, 87700, 3260)
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "=Đảo marine",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-160, 87750, -2010)
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "=Đảo nickbeo",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1600, 87700, 637)
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Đảo garou",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1600, 87700, 1073)
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Đảo sukuna",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1500, 87700, 2800)
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Đảo grab",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2040, 87700, 50)
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Đảo cid và  geto",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1635, 87710, -1085)
-      		print("button pressed")
-  	end    
-})
-
---[[
-Name = <string> - The name of the button.
-Callback = <function> - The function of the button.
-]]
-Tab:AddButton({
-	Name = "Đảo sun",
-	Callback = function()
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1603, 87700, -2191)
-      		print("button pressed")
-  	end    
-})
-
+drops:Button("Kaido", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-685, 87690, 789)
+end)
+drops:Button("platinum 2000+", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1258, 87700, 3260)
+end)
 local drops = serv:Channel("pvp")
 drops:Button("speed", function()
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80
@@ -600,7 +311,18 @@ game:GetService("Players").chaugiatanloczx.Backpack.Guts.Hitbox:FireServer()
 wait(0.1)
 end
 end)
-
+drops:Button("5m lvl hard", function()
+end)
+drops:Button("10m lvl super hard", function()
+end)
+drops:Button("15m level impossible", function()
+end)
+drops:Button("chụp lvl gửi cho anh tủn eo hoặc chon", function()
+end)
+drops:Button("lvl 1m get angel lvl 2m get 3 angel lvl 4m get geto lvl 10m get 3 cid", function()
+end)
+drops:Button("15m trở thành nhân viên đc test hack + đc một item bất kỳ bạn muốn ", function()
+end)
 local serv = win:Server("VNP 1⭐", "")
 local drops = serv:Channel("auto farm")
 drops:Button("code spy", function()
@@ -664,29 +386,11 @@ end)
 drops:Button("admin inf yield", function()
 loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
 end)
+local drops = serv:Channel("more coming soon")
+local serv = win:Server("A Credits", "")
+local drops = serv:Channel("Credits")
+drops:Button("tìm menu+thêm script (Chon)", function()
+end)
 
-local drops = serv:Channel("coming soon")
-local serv = win:Server("Chức năng khác")
-
-drops:Button("sea 2 telepor ⌛", function()
-end)
-drops:Button("SHOP", function()
-end)
-drops:Button("Buy sniper 4.1M beli khá đắt vs newbie", function()fireclickdetector(game:GetService("Workspace").MAP["DAK ISLAND [Lv 1350+]"][" "].ClickDetector)
-end)
-drops:Button("hanon", function()fireclickdetector(game:GetService("Workspace").MAP["END TOWN [Lv550+] "]["ALL BOSS"][" "].ClickDetector)
-end)
-drops:Button("real triple katana", function()
-end)
-drops:Button("beli+Localplayer", function()
-end)
-drops:Button("inf beli box event càng click nhiều càng nhanh", function()
-while true do
-fireclickdetector(game:GetService("Workspace").MAP["Event Island"].EventBox.ClickDetector)
-wait(0.001)
-end
-end)
-drops:Toggle("super ultra inf skill", false, function(t)
-    aura = t
-dis = tonumber(v)
+drops:Button("người tạo fast attack(concubi99)", function()
 end)

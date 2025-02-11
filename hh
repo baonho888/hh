@@ -1,9 +1,9 @@
 local player = game.Players.LocalPlayer
 
-if player.Name == "bao2008c" or player.Name == "kaobhh2334" or player.Name == "danhrlom" or player.Name == "q" or player.Name == "n" then
-    print("Ko cóa đâu")
+if player.Name == "bao2008c" or player.Name == "kaobhh2334" or player.Name == "danhrlom" or player.Name == "k" or player.Name == "k" then
+    print("=KO CÓA ĐÂU")
 else
-    player:Kick("Ko cóa đâu")
+    player:Kick("=KO CÓA ")
 end
 local DiscordLib =
     loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
@@ -236,6 +236,7 @@ while wait()do
 local args = {
     [1] = 8,
     [2] = 1
+    [3] = 100,
 }
 
 game:GetService("Players").LocalPlayer.PlayerGui.Goku.Skill1b.Z.TextButtonm1.Hitbox:FireServer(unpack(args))
@@ -380,7 +381,40 @@ end)
 
 local drops = serv:Channel("skill")
 drops:Button("hoho", function()
-loa200
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+drops:Button("skill", function()
+end)
+drops:Toggle("skill Z gojo", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+game:GetService("Players").LocalPlayer.Character.Gojo.Z.Fire:FireServer()
+wait(0.1)
+end
+end)
+drops:Toggle("Skill X gojo ", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+game:GetService("Players").LocalPlayer.Character.Gojo.X.Fire:FireServer()
+wait(0.1)
+end
+end)
+drops:Toggle("skill C gojo + bug black ", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+game:GetService("Players").LocalPlayer.Character.Gojo.C.Fire:FireServer()
+wait(0.1)
+end
+end)
+
+drops:Toggle("hitbox all", false, function(t)
+    aura = t
+dis = tonumber(v)
+_G.HeadSize = 50
 _G.Disabled = true
  
 game:GetService('RunService').RenderStepped:connect(function()
@@ -431,7 +465,7 @@ drops:Button("10m lvl super hard", function()
 end)
 drops:Button("15m level impossible", function()
 end)
-drops:Button("chụp lvl gửi cho anh ", function()
+drops:Button("chụp lvl gửi cho anh tủn eo hoặc chon", function()
 end)
 drops:Button("lvl 1m get angel lvl 2m get 3 angel lvl 4m get geto lvl 10m get 3 cid", function()
 end)
@@ -440,8 +474,71 @@ end)
 local serv = win:Server("VNP 1⭐", "")
 local drops = serv:Channel("auto farm")
 drops:Button("code spy", function()
-loadstring(game:HttpGet("https://githubNa)", function()
+loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+end)
+drops:Toggle("bandit", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(668.926636, 43.1711922, -586.575562, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.5)
+end
+end)
+drops:Toggle("auto quest bandit", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+workspace.NPCS.Quest1.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
+wait(0.1)
+end
+end)
+drops:Toggle("boss bandit", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+workspace.NPCS.Quest1.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
+wait(0.1)
+end
+end)
+drops:Toggle("boss snow", false, function(t)
+    aura = t
+dis = tonumber(v)
+
+end)
+drops:Toggle("auto quest boss snow", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+workspace.NPCS.Quest2.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
+wait(0.1)
+end
 end)
 
-drops:Button("người tạo fast attack(Nang)", function()
+drops:Toggle("minmama", false, function(t)
+    aura = t
+dis = tonumber(v)
+
+end)
+
+drops:Toggle("auto quest minmama", false, function(t)
+    aura = t
+dis = tonumber(v)
+
+end)
+drops:Toggle("dark user", false, function(t)
+    aura = t
+dis = tonumber(v)
+
+end)
+
+drops:Button("admin inf yield", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+local drops = serv:Channel("more coming soon")
+local serv = win:Server("A Credits", "")
+local drops = serv:Channel("Credits")
+drops:Button("tìm menu+thêm script (Nang)", function()
+end)
+
+drops:Button("người tạo fast attack(Na)", function()
 end)

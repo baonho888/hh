@@ -221,7 +221,14 @@ drops:Button("Kaido", function()game.Players.LocalPlayer.Character.HumanoidRootP
 end)
 drops:Button("platinum 2000+", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1258, 87700, 3260)
 end)
+Tab:AddButton({
+	Name = "Đảo khởi đầu",
+	Callback = function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(485.583771, 35.5632935, -511.945404)
 
+      		print("button pressed")
+  	end    
+})
 local drops = serv:Channel("pvp")
 drops:Button("speed", function()
 game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80
@@ -395,3 +402,6 @@ end)
 
 drops:Button("người tạo fast attack(concubi99)", function()
 end)
+
+Dịch
+

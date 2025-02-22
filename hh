@@ -34,91 +34,6 @@ end
 end
 end)
 
-local drops = serv:Channel("Auto raid⭐")
-    drops:Textbox("Distance aura", "Type a number", true, function(v)
-    dis = tonumber(v)
-    if not dis then
-        DiscordLib:Notification("Error", "Please enter a valid number for Distance", "Ok")
-    end
-end)
-
-drops:Toggle("Kill Aura Humanoid", false, function(t)
-    aura = t
-    if not dis then
-        DiscordLib:Notification("Warning", "Choose Distance for Kill Aura", "Ok")
-        return
-    end
-    while aura do
-        wait(0.1)
-        for _, v in pairs(game:GetService("Workspace")["NPC DAMAGE"]:GetDescendants()) do
-            local humanoid = v:FindFirstChildOfClass("Humanoid")
-            local rootPart = v:FindFirstChild("HumanoidRootPart")
-            if humanoid and rootPart and humanoid.Health > 0 and v.Name ~= game.Players.LocalPlayer.Name then
-                local distance = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - rootPart.Position).Magnitude
-                if distance <= dis then
-                    pcall(function()
-                        repeat
-                            wait()
-                            humanoid.Health = 0
-                            rootPart.CanCollide = false
-                            sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
-                        until humanoid.Health <= 0 or not aura
-                    end)
-                end
-            end
-        end
-    end
-end)
-drops:Toggle("auto dark orb store đừng sài ⚠️", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-local args = {
-    [1] = 1
-}
-
-game:GetService("ReplicatedStorage").Save.SavingEvent:FireServer(unpack(args))
-wait(0.1)
-end
-end)
-drops:Toggle("auto sjw store Đừng sài ⚠️", false, function(t)
-    aura = t
-dis = tonumber(v)
-while true do
-local args = {
-    [1] = 1
-}
-
-game:GetService("ReplicatedStorage").Save.SavingEvent:FireServer(unpack(args))
-wait(0.1)
-end
-end)
-drops:Toggle("TP to raid", false, function(t)
-    aura = t
-dis = tonumber(v)
-game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(578.97998, 33.2999954, -460.05011, 1, 0, 0, 0, 1, 0, 0, 0, 1)
-end)
-local sldr = sldrs:Slider("Tốc độ", 0, 150, 100, function(t) 
-    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t 
-end)
-
-sldrs:Button("Tốc độ 50", function() 
-    sldr:Change(50) 
-end)
-
-sldrs:Button("Tốc độ 75", function() 
-    sldr:Change(75) 
-end)
-
-sldrs:Button("Tốc độ 100", function() 
-    sldr:Change(100) 
-end)
-
-sldrs:Button("Tốc độ 150", function() 
-    sldr:Change(150) 
-end)
-
-
 drops:Button(
     "Get max level",
     function()
@@ -467,6 +382,90 @@ drops:Toggle("dark user", false, function(t)
     aura = t
 dis = tonumber(v)
 
+end)
+
+local drops = serv:Channel("Auto raid⭐")
+    drops:Textbox("Distance aura", "Type a number", true, function(v)
+    dis = tonumber(v)
+    if not dis then
+        DiscordLib:Notification("Error", "Please enter a valid number for Distance", "Ok")
+    end
+end)
+
+drops:Toggle("Kill Aura Humanoid", false, function(t)
+    aura = t
+    if not dis then
+        DiscordLib:Notification("Warning", "Choose Distance for Kill Aura", "Ok")
+        return
+    end
+    while aura do
+        wait(0.1)
+        for _, v in pairs(game:GetService("Workspace")["NPC DAMAGE"]:GetDescendants()) do
+            local humanoid = v:FindFirstChildOfClass("Humanoid")
+            local rootPart = v:FindFirstChild("HumanoidRootPart")
+            if humanoid and rootPart and humanoid.Health > 0 and v.Name ~= game.Players.LocalPlayer.Name then
+                local distance = (game.Players.LocalPlayer.Character.HumanoidRootPart.Position - rootPart.Position).Magnitude
+                if distance <= dis then
+                    pcall(function()
+                        repeat
+                            wait()
+                            humanoid.Health = 0
+                            rootPart.CanCollide = false
+                            sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", math.huge)
+                        until humanoid.Health <= 0 or not aura
+                    end)
+                end
+            end
+        end
+    end
+end)
+drops:Toggle("auto dark orb store đừng sài ⚠️", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage").Save.SavingEvent:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+drops:Toggle("auto sjw store Đừng sài ⚠️", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+local args = {
+    [1] = 1
+}
+
+game:GetService("ReplicatedStorage").Save.SavingEvent:FireServer(unpack(args))
+wait(0.1)
+end
+end)
+drops:Toggle("TP to raid", false, function(t)
+    aura = t
+dis = tonumber(v)
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(578.97998, 33.2999954, -460.05011, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+end)
+local sldr = sldrs:Slider("Tốc độ", 0, 150, 100, function(t) 
+    game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = t 
+end)
+
+sldrs:Button("Tốc độ 50", function() 
+    sldr:Change(50) 
+end)
+
+sldrs:Button("Tốc độ 75", function() 
+    sldr:Change(75) 
+end)
+
+sldrs:Button("Tốc độ 100", function() 
+    sldr:Change(100) 
+end)
+
+sldrs:Button("Tốc độ 150", function() 
+    sldr:Change(150) 
 end)
 
 drops:Button("admin inf yield", function()

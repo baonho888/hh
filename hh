@@ -25,6 +25,29 @@ drops:Button("get max level ", function()local player = game.Players.LocalPlayer
         end
     end
 end)
+drops:Button("hack máu", function()local Players = game:GetService("Players")
+local armors = {"Cursed-Armor", "Unique-Armor", "Darkness-Armor", "Thunder-Armor", "Thunder-Armor", "Diamond-Armor", "Golden-Armor", "Epic-Armor", "Iron-Armor", "Wooden-Armor"} -- Danh sách các loại giáp
+ 
+for _, player in pairs(Players:GetPlayers()) do
+    local backpack = player:FindFirstChild("Backpack")
+    if backpack then
+        for _, armorName in pairs(armors) do
+            local armor = backpack:FindFirstChild(armorName)
+            if armor and armor:FindFirstChild("K") and armor.K:FindFirstChild("Fire") then
+                armor.K.Fire:FireServer()
+            end
+        end
+    end
+end
+end)
+drops:Toggle("auto farm money work sea 1", false, function(t)
+    aura = t
+dis = tonumber(v)
+for i = 1, 1000 do
+fireclickdetector(workspace.MAP["Event Island"].EventBox.ClickDetector)
+end
+end)
+
 drops:Dropdown("Chọn Auto Quest", {
 "Auto Quest 1 - Pride",
 "Auto Quest 2 - Grab",
@@ -115,6 +138,8 @@ end)
 drops:Button( "đảo dark", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3465.68188, 66.2542191, 3718.19531)
 end)
 
+
+
 drops:Button( "đảo kaido", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-685, 87690, 789)
 end)
 drops:Button("đảo platium", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1258, 87700, 3260)
@@ -132,30 +157,8 @@ end)
 drops:Button("đảo cid và geto",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1635, 87710, -1085)
 end)
 drops:Button( "đảo sun",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1603, 87700, -2191)
-end)    
+end)
 
-drops:Button("hack máu", function()local Players = game:GetService("Players")
-local armors = {"Cursed-Armor", "Unique-Armor", "Darkness-Armor", "Thunder-Armor", "Thunder-Armor", "Diamond-Armor", "Golden-Armor", "Epic-Armor", "Iron-Armor", "Wooden-Armor"} -- Danh sách các loại giáp
- 
-for _, player in pairs(Players:GetPlayers()) do
-    local backpack = player:FindFirstChild("Backpack")
-    if backpack then
-        for _, armorName in pairs(armors) do
-            local armor = backpack:FindFirstChild(armorName)
-            if armor and armor:FindFirstChild("K") and armor.K:FindFirstChild("Fire") then
-                armor.K.Fire:FireServer()
-            end
-        end
-    end
-end
-end)
-drops:Toggle("auto farm money work sea 1", false, function(t)
-    aura = t
-dis = tonumber(v)
-for i = 1, 1000 do
-fireclickdetector(workspace.MAP["Event Island"].EventBox.ClickDetector)
-end
-end)
 local drops = serv:Channel("Fast Attack⭐")
  
 drops:Dropdown("Chọn Fast Attack", {

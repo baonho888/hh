@@ -1,1 +1,1426 @@
---[[ v1.0.0 https://wearedevs.net/obfuscator ]] return(function(...)local q={"\051\107\098\067\113\076\100\075\103\108\115\080\113\090\061\061","\113\082\118\071\113\048\061\061";"\084\057\113\073\112\069\084\054\113\109\068\079\083\115\087\107\051\122\043\061";"\097\049\120\115\113\055\117\111\097\120\061\061","\101\117\086\116\104\055\113\118\114\104\112\101\075\088\066\056\067\074\112\052\103\047\111\049\048\065\080\110\122\057\082\109\102\106\067\120\117\086\071\103\110\121\107\104\121\102\073\075\115\080\113\049\105\086\077\120\068\118\097\078\081\108\048\098\105\113\087\057\107\082\081\065\119\088\043\087\072\056\089\057\057\105\120\101\050\071\097\086\088\073\115\057\120\106\055\112\066\065\082\085","\051\110\118\075\056\072\061\061","\103\079\119\088\056\110\047\122","\086\082\103\088\101\110\111\087\050\120\061\061","\057\050\067\111\056\077\086\097\097\069\113\052\101\122\115\043\048\122\109\061","\083\107\098\073\083\076\074\111\051\108\103\061";"";"\084\082\098\080\084\082\118\075","\103\082\086\075\051\110\086\075\084\077\119\067\084\108\068\115";"\083\110\047\090\084\110\100\116","\113\086\057\061","\066\085\100\086\050\073\115\106\084\079\074\069\100\076\067\067\112\050\043\061","\077\078\098\111\051\108\119\115\112\072\061\061";"\103\109\109\088\057\043\103\061";"\103\107\100\067\051\107\090\061";"\101\057\119\081\083\082\086\100\086\082\118\109\050\082\111\115\083\072\061\061","\112\057\074\109\086\085\113\075\057\115\118\082\066\115\067\099\057\107\109\061";"\084\122\115\075\113\048\061\061","\077\078\098\071\113\077\119\067\083\107\118\049\051\107\057\061","\066\076\119\075\103\043\083\115\083\072\061\061";"\086\107\118\071\103\107\086\088\081\043\119\115\083\107\086\085\083\107\086\109\081\048\061\061","\066\075\074\078\100\110\100\049\097\118\118\090\066\082\119\088\112\076\103\061","\113\079\100\078\084\120\061\061","\083\107\098\080\083\110\078\049\113\077\081\061";"\083\107\118\049\051\107\057\061";"\051\075\117\068\050\050\048\075\084\050\057\079\101\076\118\056\103\078\084\061";"\051\069\043\061","\097\120\061\061";"\113\082\078\067\083\107\100\117";"\103\108\086\071\051\079\113\115","\103\122\072\088\057\079\083\119\056\122\086\118\112\109\113\101\113\122\103\061","\113\077\074\088\051\079\081\061";"\103\108\071\073\051\079\083\069\100\082\078\075\057\057\068\113","\077\078\098\122\084\090\061\061";"\083\077\109\068\086\086\115\052\066\082\102\075\113\077\081\088\056\072\061\061";"\051\107\086\080";"\051\069\081\061","\086\076\100\118\056\107\067\056\086\082\047\084\113\122\067\067\051\072\061\061";"\084\082\067\067\103\120\061\061","\057\079\086\088\083\110\086\067\100\069\086\050\101\122\083\101","\113\108\068\106\051\079\081\061","\103\108\118\080\113\107\098\071","\077\078\098\089\113\110\054\061"}for N,t in ipairs({{-836226-(-836227),-974215-(-974262)};{738420+-738419,480550+-480521},{466211+-466181;-213245-(-213292)}})do while t[1028991-1028990]<t[52133-52131]do q[t[-582536+582537]],q[t[703515-703513]],t[-112008-(-112009)],t[-616895+616897]=q[t[174376-174374]],q[t[361637-361636]],t[104768-104767]+(-132696+132697),t[871824+-871822]-(-381562-(-381563))end end local function N(N)return q[N-(661089-621275)]end do local N=table.concat local t=string.len local j={g=14283-14255,V=-840506-(-840527);r=-521278+521293;h=661541+-661478;y=-67948+68010;["\047"]=-270813+270870,A=1013+-955;f=959597-959537,n=559340+-559318,I=-193141+193192;L=-657143-(-657150),Z=302471-302423;i=688701-688691,a=231531+-231517,p=-10966-(-10996),C=214842-214809,T=-537866-(-537890),["\057"]=-481135-(-481155),X=-250286+250336,S=-17154+17183,v=-162582-(-162587);E=-835302+835305;["\054"]=-101272+101328;G=154542+-154497,W=-789683-(-789684),u=249467+-249427,K=-883043+883095;d=-14555+14568,F=333859-333828,s=-790529+790566,t=840358-840315;j=917941+-917894;k=-422360-(-422366),w=-295136+295153;["\051"]=327820-327793;N=-20820-(-20873);U=827327+-827292;q=-232198-(-232223),["\056"]=-952461+952487,["\052"]=512592-512581,c=535803-535761;["\048"]=-367555-(-367571);l=-450058-(-450096);["\050"]=78796-78777;b=-846828-(-846889);H=-588309+588309,R=-701463-(-701517),o=-328636+328677;["\053"]=456456-456397;J=298398+-298389;O=-611656+611711;e=-928882+928894;["\043"]=937292-937288,M=72928-72905;P=-876852-(-876898),x=-600326+600358,["\049"]=-147452-(-147486),B=740487+-740469;D=725329+-725280;["\055"]=-625615+625617;z=-152473-(-152512);Q=-1030716-(-1030724);Y=545600-545556,m=705249+-705213}local K=table.insert local J=type local B=q local I=string.sub local w=math.floor local r=string.char for q=632337-632336,#B,-174967+174968 do local A=B[q]if J(A)=="\115\116\114\105\110\103"then local J=t(A)local p={}local X=-567332+567333 local Y=-810020+810020 local T=-1025650+1025650 while X<=J do local q=I(A,X,X)local N=j[q]if N then Y=Y+N*(-70744-(-70808))^((889895-889892)-T)T=T+(-677031-(-677032))if T==643800+-643796 then T=-149024+149024 local q=w(Y/(914187-848651))local N=w((Y%(-411296-(-476832)))/(806393+-806137))local t=Y%(-190956+191212)K(p,r(q,N,t))Y=-376573+376573 end elseif q=="\061"then K(p,r(w(Y/(283852+-218316))))if X>=J or I(A,X+(324919+-324918),X+(478440-478439))~="\061"then K(p,r(w((Y%(98453+-32917))/(181779+-181523))))end break end X=X+(149574+-149573)end B[q]=N(p)end end end return(function(q,j,K,J,B,I,w,y,t,s,T,Z,x,Y,z,r,p,X,c,e,W,A)c,e,p,A,y,X,W,x,Y,Z,z,t,T,r,s=function(q,N)local j=Y(N)local K=function(K)return t(q,{K},N,j)end return K end,function(q,N)local j=Y(N)local K=function(K,J,B)return t(q,{K,J,B},N,j)end return K end,function()X=X+(437198+-437197)A[X]=99199+-99198 return X end,{},function(q,N)local j=Y(N)local K=function(K,J,B,I,w)return t(q,{K,J,B,I,w},N,j)end return K end,421719-421719,function(q)A[q]=A[q]-(-630455-(-630456))if-91344+91344==A[q]then A[q],r[q]=nil,nil end end,function(q,N)local j=Y(N)local K=function(...)return t(q,{...},N,j)end return K end,function(q)for N=382167-382166,#q,-708361+708362 do A[q[N]]=A[q[N]]+(-3513-(-3514))end if K then local t=K(true)local j=B(t)j[N(-504574+544434)],j[N(-260649+300483)],j[N(83956+-44113)]=q,T,function()return-1805339-222805 end return t else return J({},{[N(511748+-471914)]=T,[N(225026+-185166)]=q;[N(-702925+742768)]=function()return-2641908-(-613764)end})end end,function(q,N)local j=Y(N)local K=function(K,J,B,I,w,r,A)return t(q,{K,J;B,I,w,r,A},N,j)end return K end,function(q,N)local j=Y(N)local K=function(K,J,B,I)return t(q,{K;J,B;I},N,j)end return K end,function(t,K,J,B)local U,R,T,h,O,C,M,P,f,G,k,Q,x,v,o,F,E,a,D,V,d,l,m,A,L,n,X,g,S,u,w,H,Y,i while t do if t<682651+7146912 then if t<4418868-5809 then if t<2256624-(-785086)then if t<-845576+3003150 then if t<249901+1153684 then if t<486072+657504 then if t<1170487-385829 then Y=Y+x X=Y<=T u=not O X=u and X u=Y>=T u=O and u X=u or X u=555634+5697189 t=X and u X=6206135-(-606102)t=t or X else o=111738+-111737 t=11886014-(-871171)h=n[o]V=h end else t=-530134+16368582 Q=#D H=-560544+560545 l=T(H,Q)F=-88659+88660 H=O(D,l)Q=r[L]d=H-F m=u(d)l=nil Q[H]=m H=nil end else if t<529055+1361119 then X=r[J[-222027-(-222030)]]Y=92214-92182 A=X%Y T=r[J[-386752-(-386756)]]u=r[J[367749+-367747]]l=r[J[327893+-327890]]P=1019440-1019438 D=l-A U=-668678-(-668691)l=382651-382619 L=D/l G=U-L f=P^G O=u/f x=T(O)T=4295259039-291743 f=26630+-26629 P=973213-972957 U=861677-861421 Y=x%T x=-419759-(-419761)T=x^A X=Y/T T=r[J[-57853-(-57857)]]u=X%f f=4295388975-421679 O=u*f x=T(O)T=r[J[-5635+5639]]O=T(X)Y=x+O x=842062-776526 u=-880090-(-945626)t=14850270-(-265932)T=Y%x O=Y-T x=O/u u=-153976+154232 O=T%u Y=nil f=T-O u=f/P T=nil P=167142+-166886 A=nil f=x%P G=x-f P=G/U X=nil G={O,u;f;P}O=nil r[J[340993-340992]]=G f=nil u=nil P=nil x=nil else u=W(u)f=nil u=N(-672333+712182)L=nil l=nil D=nil l=316505+-316504 X=W(X)G=W(G)Y=W(Y)x=W(x)f=N(624416-584591)H=W(H)X=nil P=W(P)Y=nil O=nil U=nil P=N(-7644-(-47494))T=W(T)L=p()U={}O=N(1011964-972115)x=q[O]O=N(344394+-304553)T=x[O]x=p()r[x]=T G=p()O=q[u]u=N(-849081+888923)D={}T=O[u]u=q[f]f=N(-829159-(-868989))O=u[f]H=123947-123691 t=11227770-230331 f=q[P]P=N(367527-327688)u=f[P]P=p()Q=H f=-713402+713402 r[P]=f f=-176419+176421 H=64464-64463 r[G]=f f={}r[L]=U U=788890-788890 m=H H=878629+-878629 d=m<H H=l-m end end else if t<-220509+2972037 then if t<2035693-(-247169)then Y=-977215+2385229 X=N(280069+-240208)A=X^Y w=630096+4183353 t=w-A w=N(592371+-552513)A=t t=w/A w={t}t=q[N(75434+-35599)]else T=-256674-(-256675)X=r[J[-937092-(-937093)]]x=-217402-(-217404)Y=X(T,x)X=-523174-(-523175)A=Y==X t=A and 8114099-996037 or 2899743-(-167790)w=A end else if t<3328456-454698 then t=r[J[-570222+570229]]t=t and 330465+8240790 or 6752410-631811 else Q=N(1029254+-989417)t=q[Q]Q=N(-419626+459453)q[Q]=t t=4968281-(-378754)end end end else if t<299902+3254167 then if t<2954900-(-534951)then if t<57009+3390028 then if t<508615+2580659 then X=r[J[494584+-494582]]t=-550861+7668923 Y=r[J[1019155-1019152]]A=X==Y w=A else t=816165+3631475 end else R=r[X]t=R and-480294+6725302 or 10641040-(-853388)E=R end else if t<-213924+3757423 then Q=792726-792720 C=527168+-527167 t=r[u]R=t(C,Q)t=N(699797+-659960)q[t]=R Q=N(348063+-308226)C=q[Q]Q=280251+-280249 t=C>Q t=t and 4764734-385199 or-321946+3349715 else u=N(-654620+694469)O=w w=q[u]u=N(-889882-(-929724))t=w[u]u=p()f=N(974257-934432)L=N(968299+-928474)r[u]=t w=q[f]f=N(725276-685421)t=w[f]G=t f=t U=q[L]P=U t=U and 11625472-49698 or-27444+16197513 end end else if t<4450847-92733 then if t<-442525+4405167 then t=true t=t and 5693079-841794 or 8208756-(-144635)else H=#D Q=662455-662455 t=-865313+2123654 l=H==Q end else if t<276387+4110144 then C=N(624400-584547)t=q[C]m=N(-875535-(-915362))Q=q[m]C=t(Q)t=N(268141+-228304)q[t]=C t=-721984+6069019 else l=H F=l t=-892331+11889770 D[l]=F l=nil end end end end else if t<5465057-(-780534)then if t<-622991+6037338 then if t<5732809-942412 then if t<4790611-254899 then if t<3566762-(-894017)then w={X}t=q[N(-912082-(-951922))]else O=nil u=nil T=nil t=4633256-185616 end else t=q[N(-88385-(-128211))]w={}end else if t<4746970-(-535220)then t=114134+15216250 else t=-1030282+16360666 end end else if t<6050355-(-46862)then if t<5820278-(-35038)then t=6928847-912053 else t=true t=t and-250731+15387015 or-238618+14971217 end else if t<-852708+6994054 then X=-954719+954720 t={}A=t Y=r[J[-739896+739905]]T=Y t=982371+-777987 Y=932237-932236 x=Y Y=937486-937486 O=x<Y Y=X-x else R=U==L E=R t=10600605-(-893823)end end end else if t<7511284-493072 then if t<817204+5938409 then if t<-323340+6765691 then if t<889825+5387080 then t=r[J[414313-414312]]P=267161+-266906 f=-456845+456845 X=Y u=t(f,P)A[X]=u X=nil t=-79158-(-283542)else A=N(-698916+738737)w=N(578003+-538171)t=q[w]w=t(A)w={}t=q[N(597459-557621)]end else t={}u=-744648+744903 r[J[432159+-432157]]=t w=r[J[261137+-261134]]T=w f=N(234038-194188)G=415269-415268 x=-368112+35184372456944 w=X%x r[J[27020-27016]]=w O=X%u u=363169-363167 x=O+u r[J[917601-917596]]=x u=q[f]f=N(-273678-(-313514))O=u[f]u=O(A)U=G f=134902-134901 O=N(-715063+754917)t=-930569+9784618 Y[X]=O O=-1038727+1038858 G=-422487+422487 L=U<G P=u G=f-U end else if t<402478+6451334 then t=r[J[259680+-259670]]X=r[J[-30045-(-30056)]]A[t]=X t=r[J[-874656-(-874668)]]X={t(A)}t=q[N(-888833-(-928649))]w={j(X)}else X=N(771738+-731887)w=8099357-385458 Y=310890+15384177 A=X^Y t=w-A A=t w=N(-894426+934259)t=w/A w={t}t=q[N(-388720-(-428566))]end end else if t<8115902-1017808 then if t<616096+6439428 then w=N(-87927-(-127751))P=z(3164026-947090,{})t=q[w]A=r[J[-823088-(-823092)]]T=N(825314-785461)f=N(833974-794159)Y=q[T]u=q[f]f={u(P)}O={j(f)}u=163027+-163025 x=O[u]T=Y(x)Y=N(596988-557141)X=A(T,Y)A={X()}w=t(j(A))X=r[J[753240-753235]]t=X and 15227065-445411 or 9763747-(-596228)A=w w=X else P=p()D=N(-235157+274972)r[P]=w C=N(387735+-347882)t=r[u]G=32613-32610 U=676283+-676218 w=t(G,U)t=703756+-703756 G=p()r[G]=w l=y(16839+6898059,{})U=t t=657190+-657190 w=q[D]D={w(l)}L=t w=-393890-(-393892)t={j(D)}D=t t=D[w]l=t w=N(282275+-242451)t=q[w]H=r[Y]R=q[C]C=R(l)R=N(581014-541167)E=H(C,R)H={E()}w=t(j(H))H=p()r[H]=w w=649288-649287 t=617805+7856277 E=r[G]R=E E=-844437+844438 C=E E=-322379+322379 Q=C<E E=w-C end else if t<-725865+8299622 then t=w and 7899440-880342 or 2289967-(-461585)else d=N(-598706-(-638555))F=636777-636677 m=p()a=-408581-(-408836)r[m]=E w=q[d]d=N(-971220+1011062)t=w[d]d=-740174+740175 M=663339+-663338 w=t(d,F)d=p()r[d]=w F=610954-610954 t=r[u]w=t(F,a)F=p()r[F]=w o=N(-222192+262045)n=-714577-(-714579)g=-800260+800260 t=r[u]k=r[d]a=-95675-(-95676)w=t(a,k)a=p()v=642845-632845 r[a]=w w=r[u]k=w(M,n)w=976389+-976388 t=k==w n=N(480593+-440765)w=N(-704193+744040)k=p()r[k]=t h=q[o]t=N(-702617-(-742440))i=r[u]S={i(g,v)}o=h(j(S))t=l[t]h=N(-575754+615582)V=o..h M=n..V t=t(l,w,M)M=p()r[M]=t V=z(2064023-(-390045),{u,m,G,Y;X;H;k,M;d,a;F;P})n=N(-306279-(-346094))w=q[n]n={w(V)}t={j(n)}n=t t=r[k]t=t and 15730858-417194 or 892401+12197827 end end end end end else if t<11817935-(-861337)then if t<10985036-517239 then if t<388719+8180531 then if t<7465297-(-975173)then if t<921034+7405748 then if t<-831797+8761332 then G=N(453038-413181)t=-103602+7164946 P=q[G]w=P else w=V t=h t=13932003-203126 end else t=s(5190313-(-461012),{T})R={t()}t=q[N(519545+-479728)]w={j(R)}end else if t<-901515+9455177 then E=E+C w=E<=R m=not Q w=m and w m=E>=R m=Q and m w=m or w m=857294+6965033 t=w and m w=519845+2952916 t=t or w else X=r[J[-135317+135319]]Y=-199511+199652 A=X*Y X=416291+20699052215170 w=A+X A=894025+35184371194807 t=w%A r[J[670381+-670379]]=t A=r[J[320095+-320092]]X=-676074-(-676075)w=A~=X t=-324803+16201613 end end else if t<-636584+9509366 then if t<8961379-356113 then Y=-309383+309383 A=N(77364-37532)t=q[A]X=r[J[488607+-488599]]A=t(X,Y)t=5296484-(-824115)else D=not L G=G+U f=G<=P f=D and f D=G>=P D=L and D f=D or f D=11586619-556392 t=f and D f=4790248-314666 t=t or f end else if t<306915+8755931 then t=r[J[-415358+415359]]X=K[-163112+163114]A=K[648652+-648651]Y=t t=Y[X]t=t and 477063+2740177 or 7531833-794466 else r[J[-863501+863506]]=w A=nil t=2619634-(-131918)end end end else if t<10771248-(-732627)then if t<11780513-754446 then if t<10562509-(-286182)then if t<11176784-569261 then n=N(705665-665846)l={}d=N(874994-835138)k=N(-62305+102165)H=p()u=nil F={}r[H]=l u=N(103954+-64109)m=p()l=p()Q=e(-832820+14780607,{H;P,G,x})r[l]=Q Q={}D=nil r[m]=Q o=nil Q=q[d]M=r[m]a={[k]=M,[n]=o}x=W(x)w={}U=nil T=nil t=q[N(-828502+868361)]d=Q(F,a)X=d Q=Z(393670+8603348,{m;H,L;P,G;l})G=W(G)l=W(l)m=W(m)O=nil P=W(P)G=N(-545217-(-585065))x=N(-944652-(-984496))L=W(L)H=W(H)Y=Q f=nil T=q[x]U=4025565121113-(-818425)O=q[u]P=Y(G,U)f=X[P]X=nil P=N(-555072-(-594892))P=O[P]u={P(O,f)}x=T(j(u))T=x()Y=nil else S=613509+-613508 h=t i=n[S]S=false o=i==S t=o and 15633124-(-731533)or 7571596-(-668975)V=o end else F=not d H=H+m l=H<=Q l=F and l F=H>=Q F=d and F l=F or l F=3861453-(-544956)t=l and F l=-334050+4626910 t=t or l end else if t<-652917+12123022 then f=G C=N(-864904-(-904754))R=q[C]C=N(243501-203683)E=R[C]R=E(A,f)E=r[J[-552988+552994]]t=8290979-(-563070)C=E()H=R+C l=H+O f=nil C=-886749-(-886750)H=618794+-618538 D=l%H H=Y[X]O=D R=O+C E=T[R]l=H..E Y[X]=l else r[X]=E t=r[X]t=t and 12210980-512167 or 759255+14057009 end end else if t<12850412-1011042 then if t<-897635+12493717 then D=N(-180385-(-220210))t=16595690-425621 L=q[D]D=N(555038+-515181)U=L[D]P=U else t=2068394-(-32173)end else if t<11684926-(-572166)then O=r[x]t=-724221+4268085 w=O else k=W(k)t=-1000345+9474427 n=nil M=W(M)a=W(a)F=W(F)m=W(m)d=W(d)end end end end else if t<14942219-47052 then if t<13360570-(-612695)then if t<-285640+13657527 then if t<12791283-(-327852)then if t<550857+12273273 then r[X]=V g=818047-818046 S=r[a]i=S+g o=n[i]h=U+o o=-625549+625805 t=h%o U=t i=r[F]o=L+i i=228074+-227818 t=-800882+13278227 h=o%i L=h else h=r[X]t=h and 1795915-661462 or 13270135-512950 V=h end else Y=733833-733832 X=r[J[-871451+871454]]A=X~=Y t=A and 1039792+818535 or 977896+14898914 end else if t<92978+13723443 then t=12563363-86018 r[X]=w else A=r[J[-863616-(-863617)]]w=#A A=618328+-618328 t=w==A t=t and 8759855-197653 or 14693597-(-422605)end end else if t<14162189-(-573595)then if t<14680383-(-31707)then t=true r[J[660827+-660826]]=t t=q[N(199547-159716)]w={}else w={}t=q[N(-941388+981210)]end else if t<69276+14739106 then Y=r[J[762407-762401]]t=-15957+10375932 X=Y==A w=X else t=true t=8406289-52898 end end end else if t<528318+15040797 then if t<14295556-(-913167)then if t<15349305-178471 then if t<762751+14355800 then Y=N(-577059-(-616884))X=q[Y]t=q[N(-860088+899940)]Y=N(-437736+477566)A=X[Y]Y=r[J[869215-869214]]X={A(Y)}w={j(X)}else w=N(448367+-408530)t=q[w]A=N(-175363-(-215190))w=q[A]A=N(1031978-992151)q[A]=t A=N(-547594+587431)q[A]=w t=844440+5172354 A=r[J[-489573+489574]]X=A()end else u=N(-1019431+1059246)t=true A=K X=p()Y=N(-239425-(-279275))T=p()r[X]=t w=q[Y]Y=N(416115+-376286)t=w[Y]Y=p()r[Y]=t t=z(149099+6168398,{})r[T]=t x=p()f=c(15257715-566001,{x})t=false r[x]=t O=q[u]u=O(f)w=u t=u and 11129617-(-746474)or 3021698-(-522166)end else if t<985944+14342232 then V=r[X]t=V and-153138+10803317 or 13593655-(-135222)w=V else t=true t=t and-59200+3578542 or 4294614-(-268611)end end else if t<354105+15558074 then if t<16490536-617736 then H=#D Q=-367684+367684 l=H==Q t=l and 10590181-8409 or-398138+1656479 else t=12294226-(-831201)Y=309752+-309670 X=r[J[-1027822+1027825]]A=X*Y X=-708237+708494 w=A%X r[J[967285+-967282]]=w end else if t<17125202-840444 then t=G w=P t=P and-351352+7412696 or 7392654-(-448670)else S=-48092+48094 i=n[S]t=925173+7315398 S=r[M]o=i==S V=o end end end end end end end t=#B return j(w)end,function(q)local N,t=905986-905985,q[-949098+949099]while t do A[t],N=A[t]-(-627534+627535),N+(-585952-(-585953))if 969201-969201==A[t]then A[t],r[t]=nil,nil end t=q[N]end end,{},function(q,N)local j=Y(N)local K=function()return t(q,{},N,j)end return K end return(x(14241501-(-949236),{}))(j(w))end)(getfenv and getfenv()or _ENV,unpack or table[N(-805755+845612)],newproxy,setmetatable,getmetatable,select,{...})end)(...)
+local player = game.Players.LocalPlayer
+
+if player.Name == "bao2008c" or player.Name == "kaiserVN_thanh" or player.Name == "LzJaTUDSmXS" or player.Name == "geometrynub" or player.Name == "noobpet570" then
+    print("nằm mơ đi em")
+else
+    player:Kick("MUA SCRIPT KO FREE")
+end
+local DiscordLib =
+    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+
+local win = DiscordLib:Window("BÉO")
+
+local serv = win:Server("Preview", "")
+
+local btns = serv:Channel("click chữ c để hiện menu.")
+
+local serv = win:Server("VNP 2 premium ⭐", "")
+local drops = serv:Channel("hack free")
+local dis = nil
+local aura = false
+
+drops:Button("kill aura ", function()
+getgenv().G = true
+getgenv().Creator = 'https://discord.gg/B3HqPPzFYr - HalloweenGaster'
+while getgenv().G and getgenv().Creator == 'https://discord.gg/B3HqPPzFYr - HalloweenGaster' do
+wait(0.9)
+sethiddenproperty(game.Players.LocalPlayer, "SimulationRadius", 112412400000)
+sethiddenproperty(game.Players.LocalPlayer, "MaxSimulationRadius", 112412400000)
+for i,d in pairs(game.Workspace:GetDescendants()) do
+    if d.ClassName == 'Humanoid' and d.Parent.Name ~= game.Players.LocalPlayer.Name then
+        d.Health = 0
+    end
+end
+end
+end)
+
+--// GLOBAL
+getgenv().AutoFarm = false
+getgenv().SeaSelect = "Sea 1"
+
+--// SEA 1 FULL
+local Sea1Table = {
+    {1,"Boss","Quest1"},
+    {50,"SnowBoss","Quest2"},
+    {100,"Sand","Quest3"},
+    {250,"Enel","Quest4"},
+    {550,"Ace","Quest5"},
+    {900,"Minmama","Quest6"},
+    {1350,"Dark","Quest7"},
+}
+
+--// SEA 2 FULL
+local Sea2Table = {
+    {2000,"Paw","Quest1"},
+    {4000,"Magma Admiral","Quest2"},
+    {8000,"Nickbeo","Quest3"},
+    {16000,"Tango","Quest4"},
+    {20000,"Garou","Quest5"},
+    {50000,"Sukuna","Quest6"},
+    {100000,"Grab","Quest7"},
+      {500000,"Pride","Quest9"},
+}
+
+--// LEVEL
+local function getLevel()
+	local d = lp:FindFirstChild("Data")
+	if d and d:FindFirstChild("Levels") then
+		return d.Levels.Value
+	end
+	return 1
+end
+
+--// TARGET
+local function getTarget()
+	local level = getLevel()
+	local tableUse = getgenv().SeaSelect == "Sea 1" and Sea1Table or Sea2Table
+	local result = tableUse[1]
+
+	for _,v in ipairs(tableUse) do
+		if level >= v[1] then
+			result = v
+		else
+			break
+		end
+	end
+
+	return result[2], result[3]
+end
+
+--// FIND NPC
+local function findBoss(name)
+	local folder = workspace:FindFirstChild("NPC DAMAGE")
+	if not folder then return end
+
+	name = string.lower(name)
+
+	for _,npc in pairs(folder:GetChildren()) do
+		if string.find(string.lower(npc.Name), name) then
+			return npc
+		end
+	end
+end
+
+--// QUEST SMART
+local function doQuest(questName)
+	local npcs = workspace:FindFirstChild("NPCS")
+	if not npcs then return end
+
+	local q = npcs:FindFirstChild(questName)
+	if not q then return end
+
+	local qt = q.ClickPart.QuestTake.QuestTake
+
+	pcall(function()
+		if getgenv().SeaSelect == "Sea 2" and qt:FindFirstChild("Accept3") then
+			qt.Accept3.RemoteEvent:FireServer()
+		elseif qt:FindFirstChild("Accept2") then
+			qt.Accept2.RemoteEvent:FireServer()
+		elseif qt:FindFirstChild("Accept1") then
+			qt.Accept1.RemoteEvent:FireServer()
+		end
+	end)
+end
+
+--// TWEEN BEHIND
+local function tweenBehind(boss)
+	local char = lp.Character
+	if not char then return end
+
+	local hrp = char:FindFirstChild("HumanoidRootPart")
+	local bhrp = boss and boss:FindFirstChild("HumanoidRootPart")
+
+	if not hrp or not bhrp then return end
+
+	local pos = bhrp.CFrame * CFrame.new(0,0,5)
+
+	TweenService:Create(hrp,TweenInfo.new(0.4),{CFrame=pos}):Play()
+end
+
+--// ✅ FIX TOOL REMOTE
+local DeadCache = {}
+
+local function fireToolsIfDead(boss)
+	if not boss then return end
+
+	local hum = boss:FindFirstChildOfClass("Humanoid")
+
+	local dead = false
+
+	if not hum then dead = true
+	elseif hum.Health <= 0 then dead = true
+	elseif not boss.Parent then dead = true
+	end
+
+	if dead and not DeadCache[boss] then
+		DeadCache[boss] = true
+
+		for _,tool in pairs(lp.Backpack:GetChildren()) do
+			if tool:IsA("Tool") then
+				for _,v in pairs(tool:GetDescendants()) do
+					if v:IsA("RemoteEvent") then
+						pcall(function()
+							v:FireServer()
+						end)
+					end
+				end
+			end
+		end
+	elseif not dead then
+		DeadCache[boss] = nil
+	end
+end
+
+--// LOOP
+task.spawn(function()
+	while true do
+		if getgenv().AutoFarm then
+
+			local bossName, questName = getTarget()
+			local boss = findBoss(bossName)
+
+			doQuest(questName)
+
+			if boss then
+				tweenBehind(boss)
+				fireToolsIfDead(boss)
+			end
+		end
+		task.wait(0.25)
+	end
+end)
+
+--// UI
+
+Tab:AddDropdown({
+	Name = "Select Sea",
+	Options = {"Sea 1","Sea 2"},
+	Default = "Sea 1",
+	Callback = function(v)
+		getgenv().SeaSelect = v
+	end
+})
+
+Tab:AddToggle({
+	Name = "Auto Farm",
+	Default = false,
+	Callback = function(v)
+		getgenv().AutoFarm = v
+	end
+})
+
+OrionLib:Init()
+
+
+--================ GLOBAL =================
+getgenv().SelectedNPC = nil
+getgenv().AutoBring = false
+getgenv().BringDist = 6
+
+getgenv().AutoHitbox = false
+getgenv().HitboxSize = 30
+
+getgenv().OneShot = false
+getgenv().AutoOneShot = false
+
+getgenv().SelectedSkill = "Z"
+getgenv().AutoSkill = false
+getgenv().AutoKill = false
+
+local ShotDelay = 0.4
+local LastShot = 0
+local HitboxCache = {}
+
+--================ UTILS ==================
+local function GetNPC()
+    if not getgenv().SelectedNPC then return end
+    return workspace["NPC DAMAGE"]:FindFirstChild(getgenv().SelectedNPC)
+end
+
+local function GetHRP(model)
+    if not model then return end
+    return model:FindFirstChild("HumanoidRootPart") or model.PrimaryPart
+end
+
+--================ NPC LIST ===============
+local NPC_List = {}
+pcall(function()
+    for _,v in pairs(workspace["NPC DAMAGE"]:GetChildren()) do
+        if v:IsA("Model") then
+            table.insert(NPC_List, v.Name)
+        end
+    end
+end)
+
+--================ UI =====================
+Tab:AddDropdown({
+    Name = "Select NPC / Boss",
+    Options = NPC_List,
+    Callback = function(v)
+        getgenv().SelectedNPC = v
+    end
+})
+
+Tab:AddButton({
+    Name = "Teleport To NPC",
+    Callback = function()
+        local npc = GetNPC()
+        local hrp = GetHRP(npc)
+        local char = LP.Character
+        if hrp and char and char:FindFirstChild("HumanoidRootPart") then
+            char.HumanoidRootPart.CFrame = hrp.CFrame * CFrame.new(0,0,-4)
+        end
+    end
+})
+
+--================ BRING ==================
+Tab:AddSlider({
+    Name = "Bring Distance",
+    Min = 3, Max = 15, Default = 6,
+    Callback = function(v)
+        getgenv().BringDist = v
+    end
+})
+
+Tab:AddToggle({
+    Name = "Auto Bring (Front)",
+    Callback = function(v)
+        getgenv().AutoBring = v
+    end
+})
+
+--================ HITBOX =================
+Tab:AddSlider({
+    Name = "Hitbox Size",
+    Min = 10, Max = 80, Default = 30,
+    Callback = function(v)
+        getgenv().HitboxSize = v
+    end
+})
+
+Tab:AddToggle({
+    Name = "Hitbox Resize",
+    Callback = function(v)
+        getgenv().AutoHitbox = v
+    end
+})
+
+--================ ONE SHOT ===============
+local function KillNPC()
+    local npc = GetNPC()
+    if not npc then return end
+    local hum = npc:FindFirstChildOfClass("Humanoid")
+    if hum and hum.Health > 0 then
+        sethiddenproperty(LP,"SimulationRadius",math.huge)
+        sethiddenproperty(LP,"MaxSimulationRadius",math.huge)
+        hum.Health = 0
+    end
+end
+
+Tab:AddButton({
+    Name = "One Shot",
+    Callback = function()
+        KillNPC()
+    end
+})
+
+Tab:AddToggle({
+    Name = "Auto One Shot",
+    Callback = function(v)
+        getgenv().AutoOneShot = v
+    end
+})
+
+--================ SKILL ==================
+Tab:AddDropdown({
+    Name = "Select Skill",
+    Options = {"Z","X","C","V","B","N","F","K"},
+    Default = "Z",
+    Callback = function(v)
+        getgenv().SelectedSkill = v
+    end
+})
+
+-- biến
+local AutoQuest = false
+local SelectedQuest = nil
+
+-- bảng quest
+local QuestTable = {
+    ["Okaku"] = function()
+        workspace.NPCS.Quest10.ClickPart.QuestTake.QuestTake.Accept3.RemoteEvent:FireServer()
+    end,
+
+    ["Pride"] = function()
+        workspace.NPCS.Quest9.ClickPart.QuestTake.QuestTake.Accept3.RemoteEvent:FireServer()
+    end,
+
+    ["Grab"] = function()
+        workspace.NPCS.Quest7.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
+    end,
+
+    ["Sukuna"] = function()
+        workspace.NPCS.Quest6.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
+    end,
+
+    ["Geto"] = function()
+        workspace.NPCS.Quest8.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
+    end,
+
+    ["Cid"] = function()
+        workspace.NPCS.Quest8.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
+    end
+}
+
+-- Dropdown chọn quest
+Tab:AddDropdown({
+    Name = "Chọn Quest",
+    Default = "",
+    Options = {"Pride", "Grab", "Sukuna", "Geto", "Cid", "Okaku"},
+    Callback = function(Value)
+        SelectedQuest = Value
+    end
+})
+
+-- Toggle Auto Quest
+Tab:AddToggle({
+    Name = "Auto Quest",
+    Default = false,
+    Callback = function(Value)
+        AutoQuest = Value
+
+        if Value then
+            task.spawn(function()
+                while AutoQuest do
+                    if SelectedQuest and QuestTable[SelectedQuest] then
+                        pcall(function()
+                            QuestTable[SelectedQuest]()
+                        end)
+                    end
+                    task.wait(0.1)
+                end
+            end)
+        end
+    end
+})
+
+-- Notify
+OrionLib:Init()
+
+
+Tab:AddToggle({
+    Name = "Auto Skill When Boss Die",
+    Callback = function(v)
+        getgenv().AutoSkill = v
+    end
+})
+
+Tab:AddToggle({
+    Name = "Auto Kill (Tween + Fire)",
+    Callback = function(v)
+        getgenv().AutoKill = v
+    end
+})
+
+--================ FIRE ===================
+local function FireSkill()
+    for _,tool in pairs(LP.Backpack:GetChildren()) do
+        if tool:IsA("Tool") then
+            local s = tool:FindFirstChild(getgenv().SelectedSkill)
+            if s and s:FindFirstChild("Fire") then
+                pcall(function()
+                    s.Fire:FireServer()
+                end)
+            end
+        end
+    end
+end
+
+local function FireAllRemote()
+    for _,tool in pairs(LP.Backpack:GetChildren()) do
+        if tool:IsA("Tool") then
+            for _,v in pairs(tool:GetDescendants()) do
+                if v:IsA("RemoteEvent") then
+                    pcall(function()
+                        v:FireServer()
+                        task.wait(0.05)
+                    end)
+                end
+            end
+        end
+    end
+end
+
+--================ LOOP ===================
+RunService.Heartbeat:Connect(function()
+    local npc = GetNPC()
+    local hrp = GetHRP(npc)
+    local char = LP.Character
+    local hum = npc and npc:FindFirstChildOfClass("Humanoid")
+    if not npc or not hrp or not char or not char:FindFirstChild("HumanoidRootPart") then return end
+
+    -- HITBOX FIX
+    if getgenv().AutoHitbox then
+        if not HitboxCache[hrp] then
+            HitboxCache[hrp] = hrp.Size
+        end
+        hrp.Size = Vector3.new(getgenv().HitboxSize,getgenv().HitboxSize,getgenv().HitboxSize)
+        hrp.CanCollide = false
+    elseif HitboxCache[hrp] then
+        hrp.Size = HitboxCache[hrp]
+    end
+
+    -- BRING
+    if getgenv().AutoBring then
+        hrp.CFrame =
+            char.HumanoidRootPart.CFrame
+            + char.HumanoidRootPart.CFrame.LookVector * getgenv().BringDist
+    end
+
+    -- AUTO ONE SHOT (ANTI LAG)
+    if getgenv().AutoOneShot and tick() - LastShot >= ShotDelay then
+        LastShot = tick()
+        KillNPC()
+    end
+
+    -- AUTO SKILL WHEN DIE
+    if getgenv().AutoSkill and hum and hum.Health <= 0 then
+        FireSkill()
+    end
+
+    -- AUTO KILL
+    if getgenv().AutoKill then
+        TweenService:Create(
+            char.HumanoidRootPart,
+            TweenInfo.new(0.25,Enum.EasingStyle.Linear),
+            {CFrame = hrp.CFrame * CFrame.new(0,0,4)}
+        ):Play()
+        FireAllRemote()
+    end
+end)
+
+OrionLib:Init()
+local ScreenGui = Instance.new("ScreenGui")
+ScreenGui.Name = "Toggleui"
+ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
+ScreenGui.ResetOnSpawn = false
+
+local Toggle = Instance.new("TextButton")
+Toggle.Name = "Toggle"
+Toggle.Parent = ScreenGui
+Toggle.BackgroundColor3 = Color3.fromRGB(0, 0, 0)
+Toggle.BackgroundTransparency = 0.5
+Toggle.Position = UDim2.new(0, 0, 0.454706937, 0)
+Toggle.Size = UDim2.new(0, 50, 0, 50)
+Toggle.Draggable = true
+
+local Corner = Instance.new("UICorner")
+Corner.CornerRadius = UDim.new(0.2, 0)
+Corner.Parent = Toggle
+
+local Image = Instance.new("ImageLabel")
+Image.Name = "Icon"
+Image.Parent = Toggle
+Image.Size = UDim2.new(1, 0, 1, 0)
+Image.BackgroundTransparency = 1
+Image.Image = "rbxassetid://259226716" 
+
+local Corner2 = Instance.new("UICorner")
+Corner2.CornerRadius = UDim.new(0.2, 0)
+Corner2.Parent = Image
+
+Toggle.MouseButton1Click:Connect(function()
+  OrionLib:ToggleUi()
+end)
+local Player = game.Players.LocalPlayer
+local Char = Player.Character or Player.CharacterAdded:Wait()
+local HRP = Char:WaitForChild("HumanoidRootPart")
+
+Player.CharacterAdded:Connect(function(c)
+    Char = c
+    HRP = Char:WaitForChild("HumanoidRootPart")
+end)
+
+--// Biến
+local AuraEnabled = false
+local AuraSize = 15
+local AuraBall
+
+--// Tạo Aura
+local function CreateAura()
+
+	if AuraBall then AuraBall:Destroy() end
+
+	AuraBall = Instance.new("Part")
+	AuraBall.Shape = Enum.PartType.Ball
+	AuraBall.Material = Enum.Material.Neon
+	AuraBall.Color = Color3.fromRGB(255,0,0)
+	AuraBall.Transparency = 0.3
+
+	AuraBall.Anchored = true -- QUAN TRỌNG
+	AuraBall.CanCollide = false
+	AuraBall.CanTouch = true
+	AuraBall.Massless = true
+
+	AuraBall.Size = Vector3.new(AuraSize,AuraSize,AuraSize)
+	AuraBall.Parent = workspace
+
+	-- Follow player mỗi frame
+	task.spawn(function()
+		while AuraEnabled and AuraBall and HRP do
+			AuraBall.CFrame = HRP.CFrame
+			task.wait()
+		end
+	end)
+
+	-- Touch trigger
+	AuraBall.Touched:Connect(function(hit)
+		local model = hit.Parent
+		local plr = game.Players:GetPlayerFromCharacter(model)
+
+		if plr and plr ~= Player then
+
+			-- Backpack tools
+			for _,tool in pairs(Player.Backpack:GetChildren()) do
+				if tool:IsA("Tool") then
+					for _,r in pairs(tool:GetDescendants()) do
+						if r:IsA("RemoteEvent") then
+							pcall(function()
+								r:FireServer()
+							end)
+						end
+					end
+				end
+			end
+
+			-- Tool đang cầm
+			local equip = Char:FindFirstChildOfClass("Tool")
+			if equip then
+				for _,r in pairs(equip:GetDescendants()) do
+					if r:IsA("RemoteEvent") then
+						pcall(function()
+							r:FireServer()
+						end)
+					end
+				end
+			end
+		end
+	end)
+end
+
+--// Toggle
+Tab2:AddToggle({
+	Name = "Auto Skill Aura",
+	Default = false,
+	Callback = function(Value)
+		AuraEnabled = Value
+
+		if AuraEnabled then
+			CreateAura()
+		else
+			if AuraBall then
+				AuraBall:Destroy()
+				AuraBall = nil
+			end
+		end
+	end
+})
+
+--// Slider vàng
+Tab2:AddSlider({
+	Name = "Aura Size",
+	Min = 10,
+	Max = 120,
+	Default = 15,
+	Color = Color3.fromRGB(255,215,0),
+	Increment = 1,
+	ValueName = "Studs",
+	Callback = function(Value)
+		AuraSize = Value
+		if AuraBall then
+			AuraBall.Size = Vector3.new(Value,Value,Value)
+		end
+	end
+})
+
+
+-- Label
+Tab2:AddLabel("LocalPlayer")
+
+--// Services
+local Players = game:GetService("Players")
+local LP = Players.LocalPlayer
+local Camera = workspace.CurrentCamera
+
+--// ESP STORAGE
+local ESPEnabled = false
+local BackpackESPEnabled = false
+local TracerEnabled = false
+local ESPSize = 14
+
+local ESPFolder = Instance.new("Folder", game.CoreGui)
+ESPFolder.Name = "ESP_STORAGE"
+
+--================ ESP CREATE =================--
+
+local function CreateESP(Player)
+	if Player == LP then return end
+	
+	local Billboard = Instance.new("BillboardGui")
+	Billboard.Size = UDim2.new(0,200,0,50)
+	Billboard.AlwaysOnTop = true
+	Billboard.Parent = ESPFolder
+	
+	local Text = Instance.new("TextLabel", Billboard)
+	Text.Size = UDim2.new(1,0,1,0)
+	Text.BackgroundTransparency = 1
+	Text.TextColor3 = Color3.new(1,0,0)
+	Text.TextStrokeTransparency = 0
+	Text.TextScaled = true
+	
+	task.spawn(function()
+		while ESPEnabled and Player.Parent do
+			
+			local Char = Player.Character
+			if Char and Char:FindFirstChild("Head") then
+				
+				Billboard.Adornee = Char.Head
+				
+				local level = "?"
+				pcall(function()
+					level = Player.Data.Level.Value
+				end)
+				
+				local hp = "?"
+				local hum = Char:FindFirstChildOfClass("Humanoid")
+				if hum then
+					hp = math.floor(hum.Health)
+				end
+				
+				Text.Text = Player.Name.." | Lv:"..level.." | HP:"..hp
+				Text.TextSize = ESPSize
+				
+			end
+			
+			task.wait(0.2)
+		end
+		
+		Billboard:Destroy()
+	end)
+end
+
+--================ BACKPACK ESP =================--
+
+local function CreateBackpackESP(Player)
+	if Player == LP then return end
+	
+	local Billboard = Instance.new("BillboardGui")
+	Billboard.Size = UDim2.new(0,200,0,40)
+	Billboard.AlwaysOnTop = true
+	Billboard.Parent = ESPFolder
+	
+	local Text = Instance.new("TextLabel", Billboard)
+	Text.Size = UDim2.new(1,0,1,0)
+	Text.BackgroundTransparency = 1
+	Text.TextColor3 = Color3.new(0,1,1)
+	Text.TextStrokeTransparency = 0
+	Text.TextScaled = true
+	
+	task.spawn(function()
+		while BackpackESPEnabled and Player.Parent do
+			
+			local Char = Player.Character
+			if Char and Char:FindFirstChild("Head") then
+				
+				Billboard.Adornee = Char.Head
+				
+				local tools = {}
+				for _,t in pairs(Player.Backpack:GetChildren()) do
+					table.insert(tools, t.Name)
+				end
+				
+				Text.Text = table.concat(tools,", ")
+				Text.TextSize = ESPSize
+				
+			end
+			
+			task.wait(1)
+		end
+		
+		Billboard:Destroy()
+	end)
+end
+
+--================ TRACER =================--
+
+local function CreateTracer(Player)
+	if Player == LP then return end
+	
+	local Line = Drawing.new("Line")
+	Line.Thickness = 2
+	Line.Color = Color3.new(1,1,1)
+	
+	task.spawn(function()
+		while TracerEnabled and Player.Parent do
+			
+			local Char = Player.Character
+			if Char and Char:FindFirstChild("HumanoidRootPart") then
+				
+				local pos, vis = Camera:WorldToViewportPoint(Char.HumanoidRootPart.Position)
+				
+				if vis then
+					Line.Visible = true
+					Line.From = Vector2.new(Camera.ViewportSize.X/2, Camera.ViewportSize.Y)
+					Line.To = Vector2.new(pos.X,pos.Y)
+				else
+					Line.Visible = false
+				end
+				
+			end
+			
+			task.wait()
+		end
+		
+		Line:Remove()
+	end)
+end
+
+--================ TOGGLES =================--
+
+Tab2:AddToggle({
+	Name = "ESP Player",
+	Default = false,
+	Callback = function(v)
+		ESPEnabled = v
+		
+		if v then
+			for _,p in pairs(Players:GetPlayers()) do
+				CreateESP(p)
+			end
+		end
+	end
+})
+
+Tab2:AddToggle({
+	Name = "ESP Backpack",
+	Default = false,
+	Callback = function(v)
+		BackpackESPEnabled = v
+		
+		if v then
+			for _,p in pairs(Players:GetPlayers()) do
+				CreateBackpackESP(p)
+			end
+		end
+	end
+})
+
+Tab2:AddToggle({
+	Name = "Tracers",
+	Default = false,
+	Callback = function(v)
+		TracerEnabled = v
+		
+		if v then
+			for _,p in pairs(Players:GetPlayers()) do
+				CreateTracer(p)
+			end
+		end
+	end
+})
+
+--================ SLIDER =================--
+
+Tab2:AddSlider({
+	Name = "ESP Size",
+	Min = 10,
+	Max = 30,
+	Default = 14,
+	Increment = 1,
+	ValueName = "Size",
+	Callback = function(v)
+		ESPSize = v
+	end
+})
+
+--// Services
+local Players = game:GetService("Players")
+local LP = Players.LocalPlayer
+local Char = LP.Character or LP.CharacterAdded:Wait()
+local HRP = Char:WaitForChild("HumanoidRootPart")
+
+LP.CharacterAdded:Connect(function(c)
+	Char = c
+	HRP = c:WaitForChild("HumanoidRootPart")
+end)
+
+--==================================================
+-- AUTO PLAY
+--==================================================
+
+local AutoPlay = false
+
+Tab3:AddToggle({
+	Name = "Auto Nhấn Play",
+	Default = false,
+	Callback = function(v)
+		AutoPlay = v
+		
+		task.spawn(function()
+			while AutoPlay do
+				pcall(function()
+					for _,v in pairs(game:GetDescendants()) do
+						if v.Name == "Play" and v:IsA("RemoteEvent") then
+							v:FireServer()
+						end
+					end
+				end)
+				task.wait(2)
+			end
+		end)
+	end
+})
+
+--==================================================
+-- AUTO SEA 2
+--==================================================
+
+local AutoSea2 = false
+
+Tab3:AddToggle({
+	Name = "Auto Qua Sea 2",
+	Default = false,
+	Callback = function(v)
+		AutoSea2 = v
+		
+		task.spawn(function()
+			while AutoSea2 do
+				pcall(function()
+					for _,v in pairs(game:GetDescendants()) do
+						if string.find(v.Name,"Sea") and v:IsA("RemoteEvent") then
+							v:FireServer()
+						end
+					end
+				end)
+				task.wait(3)
+			end
+		end)
+	end
+})
+
+--==================================================
+-- KILLAURA
+--==================================================
+
+Tab3:AddLabel("Killaura All Mobs")
+
+local KillAura = false
+local AuraSize = 30
+local AuraCircle
+
+-- tạo vòng dưới chân
+local function CreateCircle()
+
+	if AuraCircle then AuraCircle:Destroy() end
+	
+	AuraCircle = Instance.new("Part")
+	AuraCircle.Anchored = true
+	AuraCircle.CanCollide = false
+	AuraCircle.Transparency = 0.5
+	AuraCircle.Material = Enum.Material.Neon
+	AuraCircle.Color = Color3.fromRGB(173,261,230)
+	AuraCircle.Shape = Enum.PartType.Cylinder
+	AuraCircle.Size = Vector3.new(0.2, AuraSize, AuraSize)
+	AuraCircle.Parent = workspace
+	
+	task.spawn(function()
+		while KillAura and AuraCircle do
+			if HRP then
+				AuraCircle.CFrame = HRP.CFrame * CFrame.new(0,-3,0) * CFrame.Angles(0,0,math.rad(90))
+			end
+			task.wait()
+		end
+	end)
+end
+
+-- Kill Aura loop (OPTIMIZE)
+task.spawn(function()
+
+	while task.wait(2.4) do
+		
+		if KillAura and HRP then
+			
+			pcall(function()
+				sethiddenproperty(LP,"SimulationRadius",9999999)
+				sethiddenproperty(LP,"MaxSimulationRadius",9999999)
+			end)
+
+			for _,mob in pairs(workspace:GetDescendants()) do
+				
+				if mob:IsA("Humanoid") then
+					local model = mob.Parent
+					
+					if model and model ~= Char and mob.Health > 0 then
+						
+						local root = model:FindFirstChild("HumanoidRootPart")
+						if root then
+							
+							local dist = (root.Position - HRP.Position).Magnitude
+							
+							if dist <= AuraSize then
+								mob.Health = 0
+							end
+							
+						end
+						
+					end
+				end
+				
+			end
+			
+		end
+		
+	end
+	
+end)
+
+-- Toggle
+Tab3:AddToggle({
+	Name = "Kill Aura",
+	Default = false,
+	Callback = function(v)
+		KillAura = v
+		
+		if v then
+			CreateCircle()
+		else
+			if AuraCircle then AuraCircle:Destroy() end
+		end
+	end
+})
+
+-- Slider
+Tab3:AddSlider({
+	Name = "kích thước Aura ",
+	Min = 10,
+	Max = 520,
+	Default = 30,
+	Increment = 1,
+	ValueName = "Studs",
+	Callback = function(v)
+		AuraSize = v
+		
+		if AuraCircle then
+			AuraCircle.Size = Vector3.new(0.2, v, v)
+		end
+	end
+})
+
+
+--------------------------------------------------
+-- ⭐ AUTO ARMOR
+--------------------------------------------------
+getgenv().AutoArmor = false
+
+Tab3:AddToggle({
+	Name = "Auto Armor ⭐",
+	Default = false,
+	Callback = function(v)
+		getgenv().AutoArmor = v
+	end
+})
+
+task.spawn(function()
+	while true do
+		if getgenv().AutoArmor then
+			local Players = game:GetService("Players")
+			local armors = {
+				"Cursed-Armor","Unique-Armor","Darkness-Armor",
+				"Thunder-Armor","Diamond-Armor","Golden-Armor",
+				"Epic-Armor","Iron-Armor","Godly-Armor"
+			}
+
+			for _, player in pairs(Players:GetPlayers()) do
+				local backpack = player:FindFirstChild("Backpack")
+				if backpack then
+					for _, armorName in pairs(armors) do
+						local armor = backpack:FindFirstChild(armorName)
+						if armor and armor:FindFirstChild("K") and armor.K:FindFirstChild("Fire") then
+							armor.K.Fire:FireServer()
+						end
+					end
+				end
+			end
+		end
+		task.wait(0.1)
+	end
+end)
+
+--------------------------------------------------
+-- ✳️ AUTO CẤT (Auto dùng tool đang cầm)
+--------------------------------------------------
+getgenv().AutoStore = false
+
+Tab3:AddToggle({
+	Name = "Auto Cất ✳️",
+	Default = false,
+	Callback = function(v)
+		getgenv().AutoStore = v
+	end
+})
+
+task.spawn(function()
+	while true do
+		if getgenv().AutoStore then
+			local char = game.Players.LocalPlayer.Character
+			if char then
+				for _, tool in pairs(char:GetChildren()) do
+					if tool:IsA("Tool") and tool:FindFirstChild("RemoteEvent") then
+						tool.RemoteEvent:FireServer()
+					end
+				end
+			end
+		end
+		task.wait(0.3)
+	end
+end)
+
+--------------------------------------------------
+-- 🦘 INF JUMP
+--------------------------------------------------
+getgenv().InfJump = false
+
+Tab3:AddToggle({
+	Name = "Inf Jump 🦘",
+	Default = false,
+	Callback = function(v)
+		getgenv().InfJump = v
+	end
+})
+
+game:GetService("UserInputService").JumpRequest:Connect(function()
+	if getgenv().InfJump then
+		local hum = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
+		if hum then
+			hum:ChangeState(Enum.HumanoidStateType.Jumping)
+		end
+	end
+end)
+
+--------------------------------------------------
+-- 👻 NOCLIP
+--------------------------------------------------
+getgenv().Noclip = false
+
+Tab3:AddToggle({
+	Name = "Noclip ",
+	Default = false,
+	Callback = function(v)
+		getgenv().Noclip = v
+	end
+})
+
+task.spawn(function()
+	while true do
+		if getgenv().Noclip then
+			local char = game.Players.LocalPlayer.Character
+			if char then
+				for _, v in pairs(char:GetDescendants()) do
+					if v:IsA("BasePart") then
+						v.CanCollide = false
+					end
+				end
+			end
+		end
+		task.wait()
+	end
+end)
+
+--------------------------------------------------
+-- 💰 NHẶT ALL ITEM BOSS (CLICK DETECTOR)
+--------------------------------------------------
+getgenv().AutoBossLoot = false
+
+Tab3:AddToggle({
+	Name = "Nhặt All Item Boss Delay[1s]",
+	Default = false,
+	Callback = function(v)
+		getgenv().AutoBossLoot = v
+	end
+})
+
+task.spawn(function()
+	while true do
+		if getgenv().AutoBossLoot then
+			for _, obj in pairs(workspace:GetChildren()) do
+				local cd = obj:FindFirstChildOfClass("ClickDetector")
+				if cd then
+					fireclickdetector(cd)
+				end
+			end
+		end
+		task.wait(1)
+	end
+end)
+
+--------------------------------------------------
+-- 🎒 HÚT ITEM MAP → BACKPACK
+--------------------------------------------------
+getgenv().ItemVacuum = false
+
+Tab3:AddToggle({
+	Name = "Hút All Item Map 🎒",
+	Default = false,
+	Callback = function(v)
+		getgenv().ItemVacuum = v
+	end
+})
+
+task.spawn(function()
+	while true do
+		if getgenv().ItemVacuum then
+			local player = game.Players.LocalPlayer
+			local char = player.Character
+			if char and char:FindFirstChild("HumanoidRootPart") then
+				for _, v in pairs(workspace:GetDescendants()) do
+					if v:IsA("Tool") then
+						v.Handle.CFrame = char.HumanoidRootPart.CFrame
+					end
+				end
+			end
+		end
+		task.wait(0.5)
+	end
+end)
+
+
+
+
+
+
+local drops = serv:Channel("Teleport island⭐")
+drops:Button("đảo khởi đầu", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(485.583771, 35.5632935, -511.945404)
+end)
+drops:Button("đảo tuyết", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-915.918945, 33.7605095, 282.443604)
+end)
+drops:Button( "đảo cát",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-708.765259, 69.1108398, 1745.13916)
+end)
+drops:Button("đảo trời", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4594.52393, 4279.44092, 474.423523)
+end)
+drops:Button("thị trấn end",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2223.75146, 36.3414612, 1965.90369)
+end)
+drops:Button("đảo minh mama", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2569.90283, 51.1074524, -65.4458542)
+end)
+drops:Button( "đảo dark", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3465.68188, 66.2542191, 3718.19531)
+end)
+
+
+
+drops:Button( "đảo kaido", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-685, 87690, 789)
+end)
+drops:Button("đảo platium", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1258, 87700, 3260)
+end)
+drops:Button( "đảo marine",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-160, 87750, -2010)
+end)
+drops:Button( "đảo nickbeo", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1600, 87700, 637)
+end)
+drops:Button("đảo garou", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1600, 87700, 1073)
+end)
+drops:Button( "đảo sukuna",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1500, 87700, 2800)
+end)
+drops:Button("đảo grab",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2040, 87700, 50)
+end)		
+drops:Button("đảo cid và geto",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1635, 87710, -1085)
+end)
+drops:Button( "đảo sun",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1603, 87700, -2191)
+end)
+drops:Button( "đảo goly ",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6321.96729, 87714.7656, -2994.5603)
+end)
+
+local drops = serv:Channel("pvp")
+drops:Button("speed", function()
+game.Players.LocalPlayer.Character.Humanoid.WalkSpeed = 80
+end)
+
+
+drops:Button("tele đến chỗ an toàn (khi sắp die)", function()
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(602.925415, 67.1156769, -532.647766, 0.997549474, 0, 0.0699642524, 0, 1, 0, -0.0699642524, 0, 0.997549474)
+end)
+
+local drops = serv:Channel("skill")
+drops:Button("hoho", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/acsu123/HOHO_H/main/Loading_UI'))()
+end)
+
+drops:Button("skill", function()
+end)
+drops:Toggle("skill Z gojo", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+game:GetService("Players").LocalPlayer.Character.Gojo.Z.Fire:FireServer()
+wait(0.1)
+end
+end)
+drops:Toggle("Skill X gojo ", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+game:GetService("Players").LocalPlayer.Character.Gojo.X.Fire:FireServer()
+wait(0.1)
+end
+end)
+drops:Toggle("skill C gojo + bug black ", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+game:GetService("Players").LocalPlayer.Character.Gojo.C.Fire:FireServer()
+wait(0.1)
+end
+end)
+
+drops:Toggle("hitbox all", false, function(t)
+    aura = t
+dis = tonumber(v)
+_G.HeadSize = 5000
+_G.Disabled = true
+ 
+game:GetService('RunService').RenderStepped:connect(function()
+if _G.Disabled then
+for i,v in next, game:GetService('Players'):GetPlayers() do
+if v.Name ~= game:GetService('Players').LocalPlayer.Name then
+pcall(function()
+v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
+v.Character.HumanoidRootPart.Transparency = 0.7
+v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
+v.Character.HumanoidRootPart.Material = "Neon"
+v.Character.HumanoidRootPart.CanCollide = false
+end)
+end
+end
+end
+end)
+end)
+
+drops:Toggle("Auto Katana 🗡️", false, function(t)
+    aura = t
+    task.spawn(function()
+        while aura do
+            local children = workspace.MAP["STARTER ISLAND [ Lv 1+ ]"]:GetChildren()
+            for _, v in pairs(children) do
+                local katana = v:FindFirstChild("Real Triple Katana")
+                if katana and katana:FindFirstChild("Z") and katana.Z:FindFirstChild("Fire") then
+                    katana.Z.Fire:FireServer()
+                end
+            end
+            wait(0.1)
+        end
+    end)
+end)
+
+local drops = serv:Channel("pint")
+drops:Toggle("meles +1000", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+-- Script generated by SimpleSpy - credits to exx#9394
+
+local args = {
+    [1] = "Melee"
+}
+
+game:GetService("ReplicatedStorage").StatSystem.Points:FireServer(unpack(args))
+
+wait(0.1)
+end
+end)
+local drops = serv:Channel("Event fast attack xuyên off pvp")
+drops:Toggle("giết bao2008c", false, function(t)
+game:GetService("Players").Bao2008c.Backpack.Getou.Hitbox:FireServer()
+end)
+drops:Toggle("giết  vnpw locgaminh.", false, function(t)
+while true do
+game:GetService("Players").chaugiatanloczx.Backpack.Guts.Hitbox:FireServer()
+wait(0.1)
+end
+end)
+drops:Button("5m lvl hard", function()
+end)
+drops:Button("10m lvl super hard", function()
+end)
+drops:Button("15m level impossible", function()
+end)
+drops:Button("chụp lvl gửi cho anh tủn eo hoặc chon", function()
+end)
+drops:Button("lvl 1m get angel lvl 2m get 3 angel lvl 4m get geto lvl 10m get 3 cid", function()
+end)
+drops:Button("15m trở thành nhân viên đc test hack + đc một item bất kỳ bạn muốn ", function()
+end)
+local serv = win:Server("VNP 1⭐", "")
+local drops = serv:Channel("auto farm")
+drops:Button("code spy", function()
+loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
+end)
+drops:Toggle("bandit", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(668.926636, 43.1711922, -586.575562, 1, 0, 0, 0, 1, 0, 0, 0, 1)
+wait(0.5)
+end
+end)
+drops:Toggle("auto quest bandit", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+workspace.NPCS.Quest1.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
+wait(0.1)
+end
+end)
+drops:Toggle("boss bandit", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+workspace.NPCS.Quest1.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
+wait(0.1)
+end
+end)
+drops:Toggle("boss snow", false, function(t)
+    aura = t
+dis = tonumber(v)
+
+end)
+drops:Toggle("auto quest boss snow", false, function(t)
+    aura = t
+dis = tonumber(v)
+while true do
+workspace.NPCS.Quest2.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
+wait(0.1)
+end
+end)
+
+drops:Toggle("minmama", false, function(t)
+    aura = t
+dis = tonumber(v)
+
+end)
+
+drops:Toggle("auto quest minmama", false, function(t)
+    aura = t
+dis = tonumber(v)
+
+end)
+drops:Toggle("dark user", false, function(t)
+    aura = t
+dis = tonumber(v)
+
+end)
+
+drops:Button("admin inf yield", function()
+loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+local drops = serv:Channel("more coming soon")
+local serv = win:Server("A Credits", "")
+local drops = serv:Channel("Credits")
+drops:Button("tìm menu+thêm script (Chon)", function()
+end)

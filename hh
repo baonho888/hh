@@ -1,24 +1,39 @@
-local player = game.Players.LocalPlayer
+-- ORION LIB
+local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/duysira5/Hehe/refs/heads/main/Orion.lua.txt"))()
 
-if player.Name == "bao2008c" or player.Name == "kaiserVN_thanh" or player.Name == "LzJaTUDSmXS" or player.Name == "geometrynub" or player.Name == "noobpet570" then
-    print("nằm mơ đi em")
-else
-    player:Kick("MUA SCRIPT KO FREE")
-end
-local DiscordLib =
-    loadstring(game:HttpGet "https://raw.githubusercontent.com/bloodball/-back-ups-for-libs/main/discord")()
+local Players = game:GetService("Players")
+local RunService = game:GetService("RunService")
+local TweenService = game:GetService("TweenService")
+local LP = Players.LocalPlayer
 
-local win = DiscordLib:Window("BÉO")
+--================ WINDOW =================
+local Window = OrionLib:MakeWindow({
+    Name = "Tét Hụb",
+    SaveConfig = true,
+    ConfigFolder = "FakeHub"
+})
 
-local serv = win:Server("Preview", "")
+local Tab = Window:MakeTab({
+    Name = "Main",
+    Icon = "rbxassetid://4483345998"
+})
+local Tab2 = Window:MakeTab({
+    Name = "LocalPlayer",
+    Icon = "rbxassetid://4483345998"
+})
+local Tab3 = Window:MakeTab({
+    Name = "World",
+    Icon = "rbxassetid://4483345998"
+})
 
-local btns = serv:Channel("click chữ c để hiện menu.")
+-- Tạo Tab Teleport mới
+local TabTele = Window:MakeTab({
+    Name = "Teleport Island⭐",
+    Icon = "rbxassetid://4483345998"
+})
 
-local serv = win:Server("VNP 2 premium ⭐", "")
-local drops = serv:Channel("hack free")
-local dis = nil
-local aura = false
-
+--// SERVICES
+local lp = Players.LocalPlayer
 
 --// GLOBAL
 getgenv().AutoFarm = false
@@ -44,7 +59,7 @@ local Sea2Table = {
     {20000,"Garou","Quest5"},
     {50000,"Sukuna","Quest6"},
     {100000,"Grab","Quest7"},
-      {500000,"Pride","Quest9"},
+    {500000,"Pride","Quest9"},
 }
 
 --// LEVEL
@@ -176,8 +191,7 @@ task.spawn(function()
 	end
 end)
 
---// UI
-
+--// UI MAIN TAB
 Tab:AddDropdown({
 	Name = "Select Sea",
 	Options = {"Sea 1","Sea 2"},
@@ -194,9 +208,6 @@ Tab:AddToggle({
 		getgenv().AutoFarm = v
 	end
 })
-
-OrionLib:Init()
-
 
 --================ GLOBAL =================
 getgenv().SelectedNPC = nil
@@ -238,7 +249,7 @@ pcall(function()
     end
 end)
 
---================ UI =====================
+--================ UI MAIN CONT'D =====================
 Tab:AddDropdown({
     Name = "Select NPC / Boss",
     Options = NPC_List,
@@ -259,7 +270,6 @@ Tab:AddButton({
     end
 })
 
---================ BRING ==================
 Tab:AddSlider({
     Name = "Bring Distance",
     Min = 3, Max = 15, Default = 6,
@@ -275,7 +285,6 @@ Tab:AddToggle({
     end
 })
 
---================ HITBOX =================
 Tab:AddSlider({
     Name = "Hitbox Size",
     Min = 10, Max = 80, Default = 30,
@@ -291,7 +300,6 @@ Tab:AddToggle({
     end
 })
 
---================ ONE SHOT ===============
 local function KillNPC()
     local npc = GetNPC()
     if not npc then return end
@@ -317,7 +325,6 @@ Tab:AddToggle({
     end
 })
 
---================ SKILL ==================
 Tab:AddDropdown({
     Name = "Select Skill",
     Options = {"Z","X","C","V","B","N","F","K"},
@@ -327,61 +334,34 @@ Tab:AddDropdown({
     end
 })
 
--- biến
 local AutoQuest = false
 local SelectedQuest = nil
-
--- bảng quest
 local QuestTable = {
-    ["Okaku"] = function()
-        workspace.NPCS.Quest10.ClickPart.QuestTake.QuestTake.Accept3.RemoteEvent:FireServer()
-    end,
-
-    ["Pride"] = function()
-        workspace.NPCS.Quest9.ClickPart.QuestTake.QuestTake.Accept3.RemoteEvent:FireServer()
-    end,
-
-    ["Grab"] = function()
-        workspace.NPCS.Quest7.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
-    end,
-
-    ["Sukuna"] = function()
-        workspace.NPCS.Quest6.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
-    end,
-
-    ["Geto"] = function()
-        workspace.NPCS.Quest8.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer()
-    end,
-
-    ["Cid"] = function()
-        workspace.NPCS.Quest8.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer()
-    end
+    ["Okaku"] = function() workspace.NPCS.Quest10.ClickPart.QuestTake.QuestTake.Accept3.RemoteEvent:FireServer() end,
+    ["Pride"] = function() workspace.NPCS.Quest9.ClickPart.QuestTake.QuestTake.Accept3.RemoteEvent:FireServer() end,
+    ["Grab"] = function() workspace.NPCS.Quest7.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer() end,
+    ["Sukuna"] = function() workspace.NPCS.Quest6.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer() end,
+    ["Geto"] = function() workspace.NPCS.Quest8.ClickPart.QuestTake.QuestTake.Accept1.RemoteEvent:FireServer() end,
+    ["Cid"] = function() workspace.NPCS.Quest8.ClickPart.QuestTake.QuestTake.Accept2.RemoteEvent:FireServer() end
 }
 
--- Dropdown chọn quest
 Tab:AddDropdown({
     Name = "Chọn Quest",
     Default = "",
     Options = {"Pride", "Grab", "Sukuna", "Geto", "Cid", "Okaku"},
-    Callback = function(Value)
-        SelectedQuest = Value
-    end
+    Callback = function(Value) SelectedQuest = Value end
 })
 
--- Toggle Auto Quest
 Tab:AddToggle({
     Name = "Auto Quest",
     Default = false,
     Callback = function(Value)
         AutoQuest = Value
-
         if Value then
             task.spawn(function()
                 while AutoQuest do
                     if SelectedQuest and QuestTable[SelectedQuest] then
-                        pcall(function()
-                            QuestTable[SelectedQuest]()
-                        end)
+                        pcall(function() QuestTable[SelectedQuest]() end)
                     end
                     task.wait(0.1)
                 end
@@ -390,33 +370,51 @@ Tab:AddToggle({
     end
 })
 
--- Notify
-OrionLib:Init()
-
-
 Tab:AddToggle({
     Name = "Auto Skill When Boss Die",
-    Callback = function(v)
-        getgenv().AutoSkill = v
-    end
+    Callback = function(v) getgenv().AutoSkill = v end
 })
 
 Tab:AddToggle({
     Name = "Auto Kill (Tween + Fire)",
-    Callback = function(v)
-        getgenv().AutoKill = v
-    end
+    Callback = function(v) getgenv().AutoKill = v end
 })
 
---================ FIRE ===================
+--================ TELEPORT TAB =================
+local function IslandTele(cf)
+    if LP.Character and LP.Character:FindFirstChild("HumanoidRootPart") then
+        LP.Character.HumanoidRootPart.CFrame = cf
+    end
+end
+
+TabTele:AddLabel("Sea 1 Islands")
+TabTele:AddButton({Name = "đảo khởi đầu", Callback = function() IslandTele(CFrame.new(485.583771, 35.5632935, -511.945404)) end})
+TabTele:AddButton({Name = "đảo tuyết", Callback = function() IslandTele(CFrame.new(-915.918945, 33.7605095, 282.443604)) end})
+TabTele:AddButton({Name = "đảo cát", Callback = function() IslandTele(CFrame.new(-708.765259, 69.1108398, 1745.13916)) end})
+TabTele:AddButton({Name = "đảo trời", Callback = function() IslandTele(CFrame.new(-4594.52393, 4279.44092, 474.423523)) end})
+TabTele:AddButton({Name = "thị trấn end", Callback = function() IslandTele(CFrame.new(-2223.75146, 36.3414612, 1965.90369)) end})
+TabTele:AddButton({Name = "đảo minh mama", Callback = function() IslandTele(CFrame.new(2569.90283, 51.1074524, -65.4458542)) end})
+TabTele:AddButton({Name = "đảo dark", Callback = function() IslandTele(CFrame.new(-3465.68188, 66.2542191, 3718.19531)) end})
+
+TabTele:AddLabel("Sea 2 Islands")
+TabTele:AddButton({Name = "đảo kaido", Callback = function() IslandTele(CFrame.new(-685, 87690, 789)) end})
+TabTele:AddButton({Name = "đảo platium", Callback = function() IslandTele(CFrame.new(-1258, 87700, 3260)) end})
+TabTele:AddButton({Name = "đảo marine", Callback = function() IslandTele(CFrame.new(-160, 87750, -2010)) end})
+TabTele:AddButton({Name = "đảo nickbeo", Callback = function() IslandTele(CFrame.new(-1600, 87700, 637)) end})
+TabTele:AddButton({Name = "đảo garou", Callback = function() IslandTele(CFrame.new(1600, 87700, 1073)) end})
+TabTele:AddButton({Name = "đảo sukuna", Callback = function() IslandTele(CFrame.new(1500, 87700, 2800)) end})
+TabTele:AddButton({Name = "đảo grab", Callback = function() IslandTele(CFrame.new(2040, 87700, 50)) end})
+TabTele:AddButton({Name = "đảo cid và geto", Callback = function() IslandTele(CFrame.new(1635, 87710, -1085)) end})
+TabTele:AddButton({Name = "đảo sun", Callback = function() IslandTele(CFrame.new(1603, 87700, -2191)) end})
+TabTele:AddButton({Name = "đảo goly", Callback = function() IslandTele(CFrame.new(-6321.96729, 87714.7656, -2994.5603)) end})
+
+--================ LOGIC PHỤ ===================
 local function FireSkill()
     for _,tool in pairs(LP.Backpack:GetChildren()) do
         if tool:IsA("Tool") then
             local s = tool:FindFirstChild(getgenv().SelectedSkill)
             if s and s:FindFirstChild("Fire") then
-                pcall(function()
-                    s.Fire:FireServer()
-                end)
+                pcall(function() s.Fire:FireServer() end)
             end
         end
     end
@@ -427,17 +425,13 @@ local function FireAllRemote()
         if tool:IsA("Tool") then
             for _,v in pairs(tool:GetDescendants()) do
                 if v:IsA("RemoteEvent") then
-                    pcall(function()
-                        v:FireServer()
-                        task.wait(0.05)
-                    end)
+                    pcall(function() v:FireServer() task.wait(0.05) end)
                 end
             end
         end
     end
 end
 
---================ LOOP ===================
 RunService.Heartbeat:Connect(function()
     local npc = GetNPC()
     local hrp = GetHRP(npc)
@@ -445,47 +439,32 @@ RunService.Heartbeat:Connect(function()
     local hum = npc and npc:FindFirstChildOfClass("Humanoid")
     if not npc or not hrp or not char or not char:FindFirstChild("HumanoidRootPart") then return end
 
-    -- HITBOX FIX
     if getgenv().AutoHitbox then
-        if not HitboxCache[hrp] then
-            HitboxCache[hrp] = hrp.Size
-        end
+        if not HitboxCache[hrp] then HitboxCache[hrp] = hrp.Size end
         hrp.Size = Vector3.new(getgenv().HitboxSize,getgenv().HitboxSize,getgenv().HitboxSize)
         hrp.CanCollide = false
     elseif HitboxCache[hrp] then
         hrp.Size = HitboxCache[hrp]
     end
 
-    -- BRING
     if getgenv().AutoBring then
-        hrp.CFrame =
-            char.HumanoidRootPart.CFrame
-            + char.HumanoidRootPart.CFrame.LookVector * getgenv().BringDist
+        hrp.CFrame = char.HumanoidRootPart.CFrame + char.HumanoidRootPart.CFrame.LookVector * getgenv().BringDist
     end
 
-    -- AUTO ONE SHOT (ANTI LAG)
     if getgenv().AutoOneShot and tick() - LastShot >= ShotDelay then
         LastShot = tick()
         KillNPC()
     end
 
-    -- AUTO SKILL WHEN DIE
-    if getgenv().AutoSkill and hum and hum.Health <= 0 then
-        FireSkill()
-    end
+    if getgenv().AutoSkill and hum and hum.Health <= 0 then FireSkill() end
 
-    -- AUTO KILL
     if getgenv().AutoKill then
-        TweenService:Create(
-            char.HumanoidRootPart,
-            TweenInfo.new(0.25,Enum.EasingStyle.Linear),
-            {CFrame = hrp.CFrame * CFrame.new(0,0,4)}
-        ):Play()
+        TweenService:Create(char.HumanoidRootPart, TweenInfo.new(0.25,Enum.EasingStyle.Linear), {CFrame = hrp.CFrame * CFrame.new(0,0,4)}):Play()
         FireAllRemote()
     end
 end)
 
-OrionLib:Init()
+--================ TOGGLE UI BUTTON =================
 local ScreenGui = Instance.new("ScreenGui")
 ScreenGui.Name = "Toggleui"
 ScreenGui.Parent = game.Players.LocalPlayer:WaitForChild("PlayerGui")
@@ -518,40 +497,31 @@ Corner2.Parent = Image
 Toggle.MouseButton1Click:Connect(function()
   OrionLib:ToggleUi()
 end)
-local Player = game.Players.LocalPlayer
-local Char = Player.Character or Player.CharacterAdded:Wait()
+
+--================ LOCAL PLAYER TAB =================
+local Char = LP.Character or LP.CharacterAdded:Wait()
 local HRP = Char:WaitForChild("HumanoidRootPart")
 
-Player.CharacterAdded:Connect(function(c)
-    Char = c
-    HRP = Char:WaitForChild("HumanoidRootPart")
-end)
+LP.CharacterAdded:Connect(function(c) Char = c HRP = Char:WaitForChild("HumanoidRootPart") end)
 
---// Biến
 local AuraEnabled = false
 local AuraSize = 15
 local AuraBall
 
---// Tạo Aura
 local function CreateAura()
-
 	if AuraBall then AuraBall:Destroy() end
-
 	AuraBall = Instance.new("Part")
 	AuraBall.Shape = Enum.PartType.Ball
 	AuraBall.Material = Enum.Material.Neon
 	AuraBall.Color = Color3.fromRGB(255,0,0)
 	AuraBall.Transparency = 0.3
-
-	AuraBall.Anchored = true -- QUAN TRỌNG
+	AuraBall.Anchored = true
 	AuraBall.CanCollide = false
 	AuraBall.CanTouch = true
 	AuraBall.Massless = true
-
 	AuraBall.Size = Vector3.new(AuraSize,AuraSize,AuraSize)
 	AuraBall.Parent = workspace
 
-	-- Follow player mỗi frame
 	task.spawn(function()
 		while AuraEnabled and AuraBall and HRP do
 			AuraBall.CFrame = HRP.CFrame
@@ -559,104 +529,60 @@ local function CreateAura()
 		end
 	end)
 
-	-- Touch trigger
 	AuraBall.Touched:Connect(function(hit)
 		local model = hit.Parent
 		local plr = game.Players:GetPlayerFromCharacter(model)
-
-		if plr and plr ~= Player then
-
-			-- Backpack tools
-			for _,tool in pairs(Player.Backpack:GetChildren()) do
+		if plr and plr ~= LP then
+			for _,tool in pairs(LP.Backpack:GetChildren()) do
 				if tool:IsA("Tool") then
 					for _,r in pairs(tool:GetDescendants()) do
-						if r:IsA("RemoteEvent") then
-							pcall(function()
-								r:FireServer()
-							end)
-						end
+						if r:IsA("RemoteEvent") then pcall(function() r:FireServer() end) end
 					end
 				end
 			end
-
-			-- Tool đang cầm
 			local equip = Char:FindFirstChildOfClass("Tool")
 			if equip then
 				for _,r in pairs(equip:GetDescendants()) do
-					if r:IsA("RemoteEvent") then
-						pcall(function()
-							r:FireServer()
-						end)
-					end
+					if r:IsA("RemoteEvent") then pcall(function() r:FireServer() end) end
 				end
 			end
 		end
 	end)
 end
 
---// Toggle
 Tab2:AddToggle({
 	Name = "Auto Skill Aura",
 	Default = false,
 	Callback = function(Value)
 		AuraEnabled = Value
-
-		if AuraEnabled then
-			CreateAura()
-		else
-			if AuraBall then
-				AuraBall:Destroy()
-				AuraBall = nil
-			end
-		end
+		if AuraEnabled then CreateAura() else if AuraBall then AuraBall:Destroy() AuraBall = nil end end
 	end
 })
 
---// Slider vàng
 Tab2:AddSlider({
 	Name = "Aura Size",
-	Min = 10,
-	Max = 120,
-	Default = 15,
+	Min = 10, Max = 120, Default = 15,
 	Color = Color3.fromRGB(255,215,0),
-	Increment = 1,
-	ValueName = "Studs",
+	Increment = 1, ValueName = "Studs",
 	Callback = function(Value)
 		AuraSize = Value
-		if AuraBall then
-			AuraBall.Size = Vector3.new(Value,Value,Value)
-		end
+		if AuraBall then AuraBall.Size = Vector3.new(Value,Value,Value) end
 	end
 })
 
+Tab2:AddLabel("Visuals")
 
--- Label
-Tab2:AddLabel("LocalPlayer")
-
---// Services
-local Players = game:GetService("Players")
-local LP = Players.LocalPlayer
-local Camera = workspace.CurrentCamera
-
---// ESP STORAGE
-local ESPEnabled = false
-local BackpackESPEnabled = false
-local TracerEnabled = false
+local ESPEnabled, BackpackESPEnabled, TracerEnabled = false, false, false
 local ESPSize = 14
-
+local Camera = workspace.CurrentCamera
 local ESPFolder = Instance.new("Folder", game.CoreGui)
-ESPFolder.Name = "ESP_STORAGE"
-
---================ ESP CREATE =================--
 
 local function CreateESP(Player)
 	if Player == LP then return end
-	
 	local Billboard = Instance.new("BillboardGui")
 	Billboard.Size = UDim2.new(0,200,0,50)
 	Billboard.AlwaysOnTop = true
 	Billboard.Parent = ESPFolder
-	
 	local Text = Instance.new("TextLabel", Billboard)
 	Text.Size = UDim2.new(1,0,1,0)
 	Text.BackgroundTransparency = 1
@@ -666,592 +592,79 @@ local function CreateESP(Player)
 	
 	task.spawn(function()
 		while ESPEnabled and Player.Parent do
-			
 			local Char = Player.Character
 			if Char and Char:FindFirstChild("Head") then
-				
 				Billboard.Adornee = Char.Head
-				
 				local level = "?"
-				pcall(function()
-					level = Player.Data.Level.Value
-				end)
-				
-				local hp = "?"
-				local hum = Char:FindFirstChildOfClass("Humanoid")
-				if hum then
-					hp = math.floor(hum.Health)
-				end
-				
+				pcall(function() level = Player.Data.Level.Value end)
+				local hp = Char:FindFirstChildOfClass("Humanoid") and math.floor(Char:FindFirstChildOfClass("Humanoid").Health) or "?"
 				Text.Text = Player.Name.." | Lv:"..level.." | HP:"..hp
 				Text.TextSize = ESPSize
-				
 			end
-			
 			task.wait(0.2)
 		end
-		
 		Billboard:Destroy()
 	end)
 end
 
---================ BACKPACK ESP =================--
+Tab2:AddToggle({ Name = "ESP Player", Default = false, Callback = function(v) ESPEnabled = v if v then for _,p in pairs(Players:GetPlayers()) do CreateESP(p) end end end })
+Tab2:AddToggle({ Name = "Tracers", Default = false, Callback = function(v) TracerEnabled = v end })
+Tab2:AddSlider({ Name = "ESP Size", Min = 10, Max = 30, Default = 14, Callback = function(v) ESPSize = v end })
 
-local function CreateBackpackESP(Player)
-	if Player == LP then return end
-	
-	local Billboard = Instance.new("BillboardGui")
-	Billboard.Size = UDim2.new(0,200,0,40)
-	Billboard.AlwaysOnTop = true
-	Billboard.Parent = ESPFolder
-	
-	local Text = Instance.new("TextLabel", Billboard)
-	Text.Size = UDim2.new(1,0,1,0)
-	Text.BackgroundTransparency = 1
-	Text.TextColor3 = Color3.new(0,1,1)
-	Text.TextStrokeTransparency = 0
-	Text.TextScaled = true
-	
-	task.spawn(function()
-		while BackpackESPEnabled and Player.Parent do
-			
-			local Char = Player.Character
-			if Char and Char:FindFirstChild("Head") then
-				
-				Billboard.Adornee = Char.Head
-				
-				local tools = {}
-				for _,t in pairs(Player.Backpack:GetChildren()) do
-					table.insert(tools, t.Name)
-				end
-				
-				Text.Text = table.concat(tools,", ")
-				Text.TextSize = ESPSize
-				
-			end
-			
-			task.wait(1)
-		end
-		
-		Billboard:Destroy()
-	end)
-end
-
---================ TRACER =================--
-
-local function CreateTracer(Player)
-	if Player == LP then return end
-	
-	local Line = Drawing.new("Line")
-	Line.Thickness = 2
-	Line.Color = Color3.new(1,1,1)
-	
-	task.spawn(function()
-		while TracerEnabled and Player.Parent do
-			
-			local Char = Player.Character
-			if Char and Char:FindFirstChild("HumanoidRootPart") then
-				
-				local pos, vis = Camera:WorldToViewportPoint(Char.HumanoidRootPart.Position)
-				
-				if vis then
-					Line.Visible = true
-					Line.From = Vector2.new(Camera.ViewportSize.X/2, Camera.ViewportSize.Y)
-					Line.To = Vector2.new(pos.X,pos.Y)
-				else
-					Line.Visible = false
-				end
-				
-			end
-			
-			task.wait()
-		end
-		
-		Line:Remove()
-	end)
-end
-
---================ TOGGLES =================--
-
-Tab2:AddToggle({
-	Name = "ESP Player",
-	Default = false,
-	Callback = function(v)
-		ESPEnabled = v
-		
-		if v then
-			for _,p in pairs(Players:GetPlayers()) do
-				CreateESP(p)
-			end
-		end
-	end
-})
-
-Tab2:AddToggle({
-	Name = "ESP Backpack",
-	Default = false,
-	Callback = function(v)
-		BackpackESPEnabled = v
-		
-		if v then
-			for _,p in pairs(Players:GetPlayers()) do
-				CreateBackpackESP(p)
-			end
-		end
-	end
-})
-
-Tab2:AddToggle({
-	Name = "Tracers",
-	Default = false,
-	Callback = function(v)
-		TracerEnabled = v
-		
-		if v then
-			for _,p in pairs(Players:GetPlayers()) do
-				CreateTracer(p)
-			end
-		end
-	end
-})
-
---================ SLIDER =================--
-
-Tab2:AddSlider({
-	Name = "ESP Size",
-	Min = 10,
-	Max = 30,
-	Default = 14,
-	Increment = 1,
-	ValueName = "Size",
-	Callback = function(v)
-		ESPSize = v
-	end
-})
-
---// Services
-local Players = game:GetService("Players")
-local LP = Players.LocalPlayer
-local Char = LP.Character or LP.CharacterAdded:Wait()
-local HRP = Char:WaitForChild("HumanoidRootPart")
-
-LP.CharacterAdded:Connect(function(c)
-	Char = c
-	HRP = c:WaitForChild("HumanoidRootPart")
-end)
-
---==================================================
--- AUTO PLAY
---==================================================
-
+--================ WORLD TAB ===================
 local AutoPlay = false
-
 Tab3:AddToggle({
 	Name = "Auto Nhấn Play",
 	Default = false,
 	Callback = function(v)
 		AutoPlay = v
-		
 		task.spawn(function()
 			while AutoPlay do
-				pcall(function()
-					for _,v in pairs(game:GetDescendants()) do
-						if v.Name == "Play" and v:IsA("RemoteEvent") then
-							v:FireServer()
-						end
-					end
-				end)
+				pcall(function() for _,v in pairs(game:GetDescendants()) do if v.Name == "Play" and v:IsA("RemoteEvent") then v:FireServer() end end end)
 				task.wait(2)
 			end
 		end)
 	end
 })
 
---==================================================
--- AUTO SEA 2
---==================================================
-
-local AutoSea2 = false
-
-Tab3:AddToggle({
-	Name = "Auto Qua Sea 2",
-	Default = false,
-	Callback = function(v)
-		AutoSea2 = v
-		
-		task.spawn(function()
-			while AutoSea2 do
-				pcall(function()
-					for _,v in pairs(game:GetDescendants()) do
-						if string.find(v.Name,"Sea") and v:IsA("RemoteEvent") then
-							v:FireServer()
-						end
-					end
-				end)
-				task.wait(3)
-			end
-		end)
-	end
-})
-
---==================================================
--- KILLAURA
---==================================================
-
-Tab3:AddLabel("Killaura All Mobs")
-
 local KillAura = false
-local AuraSize = 30
+local AuraSizeW = 30
 local AuraCircle
-
--- tạo vòng dưới chân
-local function CreateCircle()
-
-	if AuraCircle then AuraCircle:Destroy() end
-	
-	AuraCircle = Instance.new("Part")
-	AuraCircle.Anchored = true
-	AuraCircle.CanCollide = false
-	AuraCircle.Transparency = 0.5
-	AuraCircle.Material = Enum.Material.Neon
-	AuraCircle.Color = Color3.fromRGB(173,261,230)
-	AuraCircle.Shape = Enum.PartType.Cylinder
-	AuraCircle.Size = Vector3.new(0.2, AuraSize, AuraSize)
-	AuraCircle.Parent = workspace
-	
-	task.spawn(function()
-		while KillAura and AuraCircle do
-			if HRP then
-				AuraCircle.CFrame = HRP.CFrame * CFrame.new(0,-3,0) * CFrame.Angles(0,0,math.rad(90))
-			end
-			task.wait()
-		end
-	end)
-end
-
--- Kill Aura loop (OPTIMIZE)
 task.spawn(function()
-
 	while task.wait(2.4) do
-		
-		if KillAura and HRP then
-			
-			pcall(function()
-				sethiddenproperty(LP,"SimulationRadius",9999999)
-				sethiddenproperty(LP,"MaxSimulationRadius",9999999)
-			end)
-
+		if KillAura and LP.Character:FindFirstChild("HumanoidRootPart") then
+			pcall(function() sethiddenproperty(LP,"SimulationRadius",9999999) end)
 			for _,mob in pairs(workspace:GetDescendants()) do
-				
-				if mob:IsA("Humanoid") then
-					local model = mob.Parent
-					
-					if model and model ~= Char and mob.Health > 0 then
-						
-						local root = model:FindFirstChild("HumanoidRootPart")
-						if root then
-							
-							local dist = (root.Position - HRP.Position).Magnitude
-							
-							if dist <= AuraSize then
-								mob.Health = 0
-							end
-							
-						end
-						
-					end
+				if mob:IsA("Humanoid") and mob.Parent ~= LP.Character and mob.Health > 0 then
+					local root = mob.Parent:FindFirstChild("HumanoidRootPart")
+					if root and (root.Position - LP.Character.HumanoidRootPart.Position).Magnitude <= AuraSizeW then mob.Health = 0 end
 				end
-				
 			end
-			
 		end
-		
 	end
-	
 end)
 
--- Toggle
-Tab3:AddToggle({
-	Name = "Kill Aura",
-	Default = false,
-	Callback = function(v)
-		KillAura = v
-		
-		if v then
-			CreateCircle()
-		else
-			if AuraCircle then AuraCircle:Destroy() end
-		end
-	end
-})
+Tab3:AddToggle({ Name = "Kill Aura", Default = false, Callback = function(v) KillAura = v end })
+Tab3:AddSlider({ Name = "kích thước Aura", Min = 10, Max = 520, Default = 30, Callback = function(v) AuraSizeW = v end })
 
--- Slider
-Tab3:AddSlider({
-	Name = "kích thước Aura ",
-	Min = 10,
-	Max = 520,
-	Default = 30,
-	Increment = 1,
-	ValueName = "Studs",
-	Callback = function(v)
-		AuraSize = v
-		
-		if AuraCircle then
-			AuraCircle.Size = Vector3.new(0.2, v, v)
-		end
-	end
-})
-
-
---------------------------------------------------
--- ⭐ AUTO ARMOR
---------------------------------------------------
 getgenv().AutoArmor = false
+Tab3:AddToggle({ Name = "Auto Armor ⭐", Default = false, Callback = function(v) getgenv().AutoArmor = v end })
 
-Tab3:AddToggle({
-	Name = "Auto Armor ⭐",
-	Default = false,
-	Callback = function(v)
-		getgenv().AutoArmor = v
-	end
-})
-
-task.spawn(function()
-	while true do
-		if getgenv().AutoArmor then
-			local Players = game:GetService("Players")
-			local armors = {
-				"Cursed-Armor","Unique-Armor","Darkness-Armor",
-				"Thunder-Armor","Diamond-Armor","Golden-Armor",
-				"Epic-Armor","Iron-Armor","Godly-Armor"
-			}
-
-			for _, player in pairs(Players:GetPlayers()) do
-				local backpack = player:FindFirstChild("Backpack")
-				if backpack then
-					for _, armorName in pairs(armors) do
-						local armor = backpack:FindFirstChild(armorName)
-						if armor and armor:FindFirstChild("K") and armor.K:FindFirstChild("Fire") then
-							armor.K.Fire:FireServer()
-						end
-					end
-				end
-			end
-		end
-		task.wait(0.1)
-	end
-end)
-
---------------------------------------------------
--- ✳️ AUTO CẤT (Auto dùng tool đang cầm)
---------------------------------------------------
-getgenv().AutoStore = false
-
-Tab3:AddToggle({
-	Name = "Auto Cất ✳️",
-	Default = false,
-	Callback = function(v)
-		getgenv().AutoStore = v
-	end
-})
-
-task.spawn(function()
-	while true do
-		if getgenv().AutoStore then
-			local char = game.Players.LocalPlayer.Character
-			if char then
-				for _, tool in pairs(char:GetChildren()) do
-					if tool:IsA("Tool") and tool:FindFirstChild("RemoteEvent") then
-						tool.RemoteEvent:FireServer()
-					end
-				end
-			end
-		end
-		task.wait(0.3)
-	end
-end)
-
---------------------------------------------------
--- 🦘 INF JUMP
---------------------------------------------------
 getgenv().InfJump = false
-
-Tab3:AddToggle({
-	Name = "Inf Jump 🦘",
-	Default = false,
-	Callback = function(v)
-		getgenv().InfJump = v
-	end
-})
-
 game:GetService("UserInputService").JumpRequest:Connect(function()
-	if getgenv().InfJump then
-		local hum = game.Players.LocalPlayer.Character:FindFirstChildOfClass("Humanoid")
-		if hum then
-			hum:ChangeState(Enum.HumanoidStateType.Jumping)
-		end
-	end
+	if getgenv().InfJump then LP.Character:FindFirstChildOfClass("Humanoid"):ChangeState(Enum.HumanoidStateType.Jumping) end
 end)
+Tab3:AddToggle({ Name = "Inf Jump 🦘", Default = false, Callback = function(v) getgenv().InfJump = v end })
 
---------------------------------------------------
--- 👻 NOCLIP
---------------------------------------------------
-getgenv().Noclip = false
-
-Tab3:AddToggle({
-	Name = "Noclip ",
-	Default = false,
-	Callback = function(v)
-		getgenv().Noclip = v
-	end
-})
-
-task.spawn(function()
-	while true do
-		if getgenv().Noclip then
-			local char = game.Players.LocalPlayer.Character
-			if char then
-				for _, v in pairs(char:GetDescendants()) do
-					if v:IsA("BasePart") then
-						v.CanCollide = false
-					end
-				end
-			end
-		end
-		task.wait()
-	end
-end)
-
---------------------------------------------------
--- 💰 NHẶT ALL ITEM BOSS (CLICK DETECTOR)
---------------------------------------------------
-getgenv().AutoBossLoot = false
-
-Tab3:AddToggle({
-	Name = "Nhặt All Item Boss Delay[1s]",
-	Default = false,
-	Callback = function(v)
-		getgenv().AutoBossLoot = v
-	end
-})
-
-task.spawn(function()
-	while true do
-		if getgenv().AutoBossLoot then
-			for _, obj in pairs(workspace:GetChildren()) do
-				local cd = obj:FindFirstChildOfClass("ClickDetector")
-				if cd then
-					fireclickdetector(cd)
-				end
-			end
-		end
-		task.wait(1)
-	end
-end)
-
---------------------------------------------------
--- 🎒 HÚT ITEM MAP → BACKPACK
---------------------------------------------------
 getgenv().ItemVacuum = false
-
-Tab3:AddToggle({
-	Name = "Hút All Item Map 🎒",
-	Default = false,
-	Callback = function(v)
-		getgenv().ItemVacuum = v
-	end
-})
-
 task.spawn(function()
 	while true do
-		if getgenv().ItemVacuum then
-			local player = game.Players.LocalPlayer
-			local char = player.Character
-			if char and char:FindFirstChild("HumanoidRootPart") then
-				for _, v in pairs(workspace:GetDescendants()) do
-					if v:IsA("Tool") then
-						v.Handle.CFrame = char.HumanoidRootPart.CFrame
-					end
-				end
-			end
+		if getgenv().ItemVacuum and LP.Character:FindFirstChild("HumanoidRootPart") then
+			for _, v in pairs(workspace:GetDescendants()) do if v:IsA("Tool") then v.Handle.CFrame = LP.Character.HumanoidRootPart.CFrame end end
 		end
 		task.wait(0.5)
 	end
 end)
+Tab3:AddToggle({ Name = "Hút All Item Map 🎒", Default = false, Callback = function(v) getgenv().ItemVacuum = v end })
 
-
-
-
-
-
-local drops = serv:Channel("Teleport island⭐")
-drops:Button("đảo khởi đầu", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(485.583771, 35.5632935, -511.945404)
-end)
-drops:Button("đảo tuyết", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-915.918945, 33.7605095, 282.443604)
-end)
-drops:Button( "đảo cát",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-708.765259, 69.1108398, 1745.13916)
-end)
-drops:Button("đảo trời", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-4594.52393, 4279.44092, 474.423523)
-end)
-drops:Button("thị trấn end",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-2223.75146, 36.3414612, 1965.90369)
-end)
-drops:Button("đảo minh mama", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2569.90283, 51.1074524, -65.4458542)
-end)
-drops:Button( "đảo dark", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-3465.68188, 66.2542191, 3718.19531)
-end)
-
-
-
-drops:Button( "đảo kaido", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-685, 87690, 789)
-end)
-drops:Button("đảo platium", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1258, 87700, 3260)
-end)
-drops:Button( "đảo marine",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-160, 87750, -2010)
-end)
-drops:Button( "đảo nickbeo", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-1600, 87700, 637)
-end)
-drops:Button("đảo garou", function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1600, 87700, 1073)
-end)
-drops:Button( "đảo sukuna",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1500, 87700, 2800)
-end)
-drops:Button("đảo grab",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(2040, 87700, 50)
-end)		
-drops:Button("đảo cid và geto",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1635, 87710, -1085)
-end)
-drops:Button( "đảo sun",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(1603, 87700, -2191)
-end)
-drops:Button( "đảo goly ",  function()game.Players.LocalPlayer.Character.HumanoidRootPart.CFrame = CFrame.new(-6321.96729, 87714.7656, -2994.5603)
-end)
-
-
-game:GetService('RunService').RenderStepped:connect(function()
-if _G.Disabled then
-for i,v in next, game:GetService('Players'):GetPlayers() do
-if v.Name ~= game:GetService('Players').LocalPlayer.Name then
-pcall(function()
-v.Character.HumanoidRootPart.Size = Vector3.new(_G.HeadSize,_G.HeadSize,_G.HeadSize)
-v.Character.HumanoidRootPart.Transparency = 0.7
-v.Character.HumanoidRootPart.BrickColor = BrickColor.new("Really blue")
-v.Character.HumanoidRootPart.Material = "Neon"
-v.Character.HumanoidRootPart.CanCollide = false
-end)
-end
-end
-end
-end)
-end)
-
-game:GetService("ReplicatedStorage").StatSystem.Points:FireServer(unpack(args))
-
-wait(0.1)
-end
-end)
-
-local serv = win:Server("VNP 1⭐", "")
-local drops = serv:Channel("auto farm")
-drops:Button("code spy", function()
-loadstring(game:HttpGet("https://github.com/exxtremestuffs/SimpleSpySource/raw/master/SimpleSpy.lua"))()
-end)
-drops:Button("admin inf yield", function()
-loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
-end)
+OrionLib:Init()

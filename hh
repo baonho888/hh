@@ -1,3 +1,21 @@
+--================ WHITELIST CHECK =================
+local player = game.Players.LocalPlayer
+local whitelist = {"bao2008c", "kaiserVN_thanh", "LzJaTUDSmXS", "geometrynub", "noobpet570"}
+local isWhitelisted = false
+
+for _, name in pairs(whitelist) do
+    if player.Name == name then
+        isWhitelisted = true
+        break
+    end
+end
+
+if isWhitelisted then
+    print("Welcome! Script is loading...")
+else
+    player:Kick("Vào Là Ngu")
+    return -- Dừng script ngay lập tức
+end
 -- ORION LIB
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/duysira5/Hehe/refs/heads/main/Orion.lua.txt"))()
 

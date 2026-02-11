@@ -1,3 +1,21 @@
+--================ WHITELIST CHECK =================
+local player = game.Players.LocalPlayer
+local whitelist = {"bao2008c", "kaiserVN_thanh", "LzJaTUDSmXS", "geometrynub", "noobpet570"}
+local isWhitelisted = false
+
+for _, name in pairs(whitelist) do
+    if player.Name == name then
+        isWhitelisted = true
+        break
+    end
+end
+
+if isWhitelisted then
+    print("Welcome! Script is loading...")
+else
+    player:Kick("Bệnh Bà Rồi")
+    return -- Dừng script ngay lập tức
+end
 -- ORION LIB
 local OrionLib = loadstring(game:HttpGet("https://raw.githubusercontent.com/duysira5/Hehe/refs/heads/main/Orion.lua.txt"))()
 
@@ -1191,3 +1209,31 @@ task.spawn(function()
 		task.wait(0.5)
 	end
 end)
+
+--================ TELEPORT TAB =================
+local function IslandTele(cf)
+    if LP.Character and LP.Character:FindFirstChild("HumanoidRootPart") then
+        LP.Character.HumanoidRootPart.CFrame = cf
+    end
+end
+
+TabTele:AddLabel("Sea 1 Islands")
+TabTele:AddButton({Name = "đảo khởi đầu", Callback = function() IslandTele(CFrame.new(485.583771, 35.5632935, -511.945404)) end})
+TabTele:AddButton({Name = "đảo tuyết", Callback = function() IslandTele(CFrame.new(-915.918945, 33.7605095, 282.443604)) end})
+TabTele:AddButton({Name = "đảo cát", Callback = function() IslandTele(CFrame.new(-708.765259, 69.1108398, 1745.13916)) end})
+TabTele:AddButton({Name = "đảo trời", Callback = function() IslandTele(CFrame.new(-4594.52393, 4279.44092, 474.423523)) end})
+TabTele:AddButton({Name = "thị trấn end", Callback = function() IslandTele(CFrame.new(-2223.75146, 36.3414612, 1965.90369)) end})
+TabTele:AddButton({Name = "đảo minh mama", Callback = function() IslandTele(CFrame.new(2569.90283, 51.1074524, -65.4458542)) end})
+TabTele:AddButton({Name = "đảo dark", Callback = function() IslandTele(CFrame.new(-3465.68188, 66.2542191, 3718.19531)) end})
+
+TabTele:AddLabel("Sea 2 Islands")
+TabTele:AddButton({Name = "đảo kaido", Callback = function() IslandTele(CFrame.new(-685, 87690, 789)) end})
+TabTele:AddButton({Name = "đảo platium", Callback = function() IslandTele(CFrame.new(-1258, 87700, 3260)) end})
+TabTele:AddButton({Name = "đảo marine", Callback = function() IslandTele(CFrame.new(-160, 87750, -2010)) end})
+TabTele:AddButton({Name = "đảo nickbeo", Callback = function() IslandTele(CFrame.new(-1600, 87700, 637)) end})
+TabTele:AddButton({Name = "đảo garou", Callback = function() IslandTele(CFrame.new(1600, 87700, 1073)) end})
+TabTele:AddButton({Name = "đảo sukuna", Callback = function() IslandTele(CFrame.new(1500, 87700, 2800)) end})
+TabTele:AddButton({Name = "đảo grab", Callback = function() IslandTele(CFrame.new(2040, 87700, 50)) end})
+TabTele:AddButton({Name = "đảo cid và geto", Callback = function() IslandTele(CFrame.new(1635, 87710, -1085)) end})
+TabTele:AddButton({Name = "đảo sun", Callback = function() IslandTele(CFrame.new(1603, 87700, -2191)) end})
+TabTele:AddButton({Name = "đảo goly", Callback = function() IslandTele(CFrame.new(-6321.96729, 87714.7656, -2994.5603)) end})
